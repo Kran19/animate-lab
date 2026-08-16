@@ -1,0 +1,7 @@
+[
+  {
+    "trigger": "pointermove",
+    "target": "canvas",
+    "behavior": "Distortion follows mouse"
+  }
+]

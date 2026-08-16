@@ -43,6 +43,8 @@ export interface IComponentRepository {
   getCandidatesByPageId(pageId: string): Promise<ComponentCandidate[]>;
   getCandidatesBySectionId(sectionId: string): Promise<ComponentCandidate[]>;
   getReusableComponent(candidateId: string): Promise<ReusableComponent | undefined>;
+  exportComponent?(candidateId: string, options?: any): Promise<any>;
+  getReusableById?(candidateId: string): Promise<ReusableComponent | undefined>;
 }
 
 export interface IAnimationRepository {
@@ -83,12 +85,15 @@ export interface IJobRepository {
   getAllJobs(): Promise<CaptureJob[]>;
   getJobById(id: string): Promise<CaptureJob | undefined>;
   getLogsByJobId(jobId: string): Promise<DiagnosticLog[]>;
-  pauseJob(id: string): Promise<boolean>;
-  resumeJob(id: string): Promise<boolean>;
-  cancelJob(id: string): Promise<boolean>;
+  startJob?(websiteId: string, settings?: CaptureSettings): Promise<CaptureJob>;
+  pauseJob(id: string): Promise<boolean | CaptureJob>;
+  resumeJob(id: string): Promise<boolean | CaptureJob>;
+  cancelJob(id: string): Promise<boolean | CaptureJob>;
   retryJob(id: string): Promise<boolean>;
+  getJobStatus?(jobId: string): Promise<{ job: CaptureJob; stats: any }>;
 }
 
 export interface IStorageRepository {
   getStats(): Promise<StorageStats>;
 }
+

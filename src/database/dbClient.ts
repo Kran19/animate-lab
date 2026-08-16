@@ -1,5 +1,4 @@
 import { PrismaClient } from '@prisma/client';
-import path from 'path';
 import { defaultWorkspaceConfig } from '../engine/storage/workspaceConfig';
 
 let prismaInstance: PrismaClient | null = null;

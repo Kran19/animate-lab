@@ -1,0 +1,12 @@
+{
+  "name": "About",
+  "id": "05-about",
+  "entry": "About.tsx",
+  "style": "About.module.css",
+  "dimensions": {
+    "x": 0,
+    "y": -8680,
+    "width": 1440,
+    "height": 646
+  }
+}

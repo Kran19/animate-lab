@@ -1,0 +1,7 @@
+[
+  {
+    "trigger": "drag",
+    "target": "#card-a",
+    "behavior": "Matter.js rigid body drag with spring physics"
+  }
+]

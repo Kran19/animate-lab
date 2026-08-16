@@ -1,0 +1,7 @@
+{
+  "name": "FlavorCarouselSection",
+  "version": "1.0.0",
+  "entry": "FlavorCarouselSection.tsx",
+  "style": "FlavorCarouselSection.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

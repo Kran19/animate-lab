@@ -1,0 +1,7 @@
+{
+  "name": "MonographPublication",
+  "version": "1.0.0",
+  "entry": "MonographPublication.tsx",
+  "style": "MonographPublication.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

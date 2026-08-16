@@ -1,0 +1,1 @@
+.index-grid { padding: 4rem 2rem; background: #faf9f6; font-family: 'Space Mono', monospace; } .index-table { width: 100%; max-width: 1000px; margin: 0 auto; border-collapse: collapse; } th, td { text-align: left; padding: 1.25rem 0; border-bottom: 1px solid #ddd; } th { font-weight: 700; color: #888; font-size: 0.85rem; } td { font-size: 1.1rem; }

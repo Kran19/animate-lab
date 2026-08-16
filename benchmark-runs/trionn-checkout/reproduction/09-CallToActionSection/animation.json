@@ -1,0 +1,10 @@
+[
+  {
+    "name": "pulseGlow",
+    "type": "CSS Keyframes",
+    "trigger": "continuous",
+    "durationMs": 3000,
+    "easing": "ease-in-out",
+    "status": "REPRODUCED"
+  }
+]

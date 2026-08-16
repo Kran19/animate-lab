@@ -1,0 +1,8 @@
+[
+  {
+    "name": "horizPan",
+    "type": "ScrollTrigger",
+    "trigger": "scroll",
+    "durationMs": 1200
+  }
+]

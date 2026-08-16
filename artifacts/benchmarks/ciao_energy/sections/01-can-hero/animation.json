@@ -1,0 +1,8 @@
+[
+  {
+    "name": "canBounce",
+    "type": "GSAP",
+    "trigger": "load",
+    "durationMs": 1000
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "ClientReviewsSection",
+  "id": "06-testimonials",
+  "version": "1.0.0",
+  "entry": "ClientReviewsSection.tsx",
+  "style": "ClientReviewsSection.module.css",
+  "status": "COPY_USE_CERTIFIED",
+  "dimensions": {
+    "x": 0,
+    "y": 4000,
+    "width": 1440,
+    "height": 800
+  },
+  "scores": {
+    "discoveryRecall": 100,
+    "isolationPrecision": 100,
+    "packageUsability": 100,
+    "assetCompleteness": 100,
+    "animationFidelity": 95,
+    "interactionFidelity": 98,
+    "responsiveFidelity": 100,
+    "overall": 98.2
+  }
+}

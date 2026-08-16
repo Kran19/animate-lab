@@ -1,0 +1,24 @@
+{
+  "name": "Interactive3DExperience",
+  "id": "05-3d-experience",
+  "version": "1.0.0",
+  "entry": "Interactive3DExperience.tsx",
+  "style": "Interactive3DExperience.module.css",
+  "status": "COPY_USE_PARTIAL",
+  "dimensions": {
+    "x": 0,
+    "y": 5664,
+    "width": 1440,
+    "height": 102
+  },
+  "scores": {
+    "discoveryRecall": 100,
+    "isolationPrecision": 100,
+    "packageUsability": 100,
+    "assetCompleteness": 85,
+    "animationFidelity": 80,
+    "interactionFidelity": 85,
+    "responsiveFidelity": 96,
+    "overall": 88
+  }
+}

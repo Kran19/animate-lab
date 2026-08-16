@@ -1,0 +1,12 @@
+{
+  "name": "ServiceCard",
+  "id": "16-service_card",
+  "entry": "ServiceCard.tsx",
+  "style": "ServiceCard.module.css",
+  "dimensions": {
+    "x": 104,
+    "y": -7778,
+    "width": 395,
+    "height": 230
+  }
+}

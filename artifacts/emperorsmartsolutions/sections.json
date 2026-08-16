@@ -1,0 +1,301 @@
+[
+  {
+    "id": "01-header",
+    "name": "Header",
+    "tag": "header",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 81
+    },
+    "preview": "Home\n                        \n                    \n                    \n        ...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "02-hero",
+    "name": "Hero",
+    "tag": "header",
+    "rect": {
+      "x": 0,
+      "y": -9690,
+      "width": 1440,
+      "height": 900
+    },
+    "preview": "Next Generation IT Solutions  We Provide Application Develo Transforming busines...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "03-max_w_7xl",
+    "name": "MaxW_7xl",
+    "tag": "nav",
+    "rect": {
+      "x": 80,
+      "y": 0,
+      "width": 1280,
+      "height": 80
+    },
+    "preview": "Home\n                        \n                    \n                    \n        ...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "04-py_10",
+    "name": "Py_10",
+    "tag": "section",
+    "rect": {
+      "x": 0,
+      "y": -8790,
+      "width": 1440,
+      "height": 110
+    },
+    "preview": "ACME Corp STRIPE VERCEL ORACLE CLOUDFLARE INTEL ATLASSIAN ACME Corp STRIPE VERCE...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "05-about",
+    "name": "About",
+    "tag": "section",
+    "rect": {
+      "x": 0,
+      "y": -8680,
+      "width": 1440,
+      "height": 646
+    },
+    "preview": "Who We Are Architecting the Digital Future We are a team of visionary engineers,...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "06-services",
+    "name": "Services",
+    "tag": "section",
+    "rect": {
+      "x": 0,
+      "y": -8034,
+      "width": 1440,
+      "height": 582
+    },
+    "preview": "Our ExpertiseComprehensive IT Solutions Web DevelopmentScalable, high-performanc...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "07-services_tabs",
+    "name": "ServicesTabs",
+    "tag": "section",
+    "rect": {
+      "x": 0,
+      "y": -7453,
+      "width": 1440,
+      "height": 979
+    },
+    "preview": "Our Services We Offer Premium Solutions As a leading digital transformation comp...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "08-projects_showcase",
+    "name": "ProjectsShowcase",
+    "tag": "section",
+    "rect": {
+      "x": 0,
+      "y": -6474,
+      "width": 1440,
+      "height": 4140
+    },
+    "preview": "Featured WorkOur Projects Discover our innovative solutions that have transforme...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "09-py_24",
+    "name": "Py_24",
+    "tag": "section",
+    "rect": {
+      "x": 0,
+      "y": -2334,
+      "width": 1440,
+      "height": 810
+    },
+    "preview": "Our AdvantageWhy Partner With EmperorWe deliver more than just code – we build p...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "10-py_24",
+    "name": "Py_24",
+    "tag": "section",
+    "rect": {
+      "x": 0,
+      "y": -1524,
+      "width": 1440,
+      "height": 882
+    },
+    "preview": "Client FeedbackTrusted by Industry Leaders Discover how our solutions have trans...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "11-py_24",
+    "name": "Py_24",
+    "tag": "section",
+    "rect": {
+      "x": 0,
+      "y": -642,
+      "width": 1440,
+      "height": 570
+    },
+    "preview": "Ready to Scale Your Enterprise?Join industry leaders who have accelerated their ...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "12-contact",
+    "name": "Contact",
+    "tag": "section",
+    "rect": {
+      "x": 0,
+      "y": -72,
+      "width": 1440,
+      "height": 606
+    },
+    "preview": "Get in Touch\n                \n                    Want to learn more about how w...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "13-bg_midnight",
+    "name": "BgMidnight",
+    "tag": "footer",
+    "rect": {
+      "x": 0,
+      "y": 534,
+      "width": 1440,
+      "height": 366
+    },
+    "preview": "Emperor Smart Solutions\n                \n                Pioneering the future o...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "14-relative",
+    "name": "Relative",
+    "tag": "div",
+    "rect": {
+      "x": 104,
+      "y": -8552,
+      "width": 584,
+      "height": 390
+    },
+    "preview": "...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "15-grid",
+    "name": "Grid",
+    "tag": "div",
+    "rect": {
+      "x": 752,
+      "y": -8273,
+      "width": 584,
+      "height": 93
+    },
+    "preview": "1+Years Exp82+Clients97+Projects...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "16-service_card",
+    "name": "ServiceCard",
+    "tag": "div",
+    "rect": {
+      "x": 104,
+      "y": -7778,
+      "width": 395,
+      "height": 230
+    },
+    "preview": "Web DevelopmentScalable, high-performance web applications built with modern arc...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "17-service_card",
+    "name": "ServiceCard",
+    "tag": "div",
+    "rect": {
+      "x": 523,
+      "y": -7778,
+      "width": 395,
+      "height": 230
+    },
+    "preview": "Mobile AppsNative and cross-platform mobile solutions that deliver exceptional U...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "18-service_card",
+    "name": "ServiceCard",
+    "tag": "div",
+    "rect": {
+      "x": 941,
+      "y": -7778,
+      "width": 395,
+      "height": 230
+    },
+    "preview": "Algo TradingBuild and test algorithmic trading strategies using real market data...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "19-grid",
+    "name": "Grid",
+    "tag": "div",
+    "rect": {
+      "x": 168,
+      "y": 24,
+      "width": 1104,
+      "height": 414
+    },
+    "preview": "Get in Touch\n                \n                    Want to learn more about how w...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "20-contact_info_item",
+    "name": "ContactInfoItem",
+    "tag": "div",
+    "rect": {
+      "x": 168,
+      "y": 172,
+      "width": 520,
+      "height": 70
+    },
+    "preview": "Headquarters\n                            2nd floor 202 ,Shiti Ratna, Commercial,...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "21-contact_details",
+    "name": "ContactDetails",
+    "tag": "div",
+    "rect": {
+      "x": 224,
+      "y": 172,
+      "width": 464,
+      "height": 70
+    },
+    "preview": "Headquarters\n                            2nd floor 202 ,Shiti Ratna, Commercial,...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "22-contact_form",
+    "name": "ContactForm",
+    "tag": "div",
+    "rect": {
+      "x": 752,
+      "y": 24,
+      "width": 520,
+      "height": 414
+    },
+    "preview": "Name\n                            \n                        \n\n                    ...",
+    "status": "COPY_USE_CERTIFIED"
+  },
+  {
+    "id": "23-rotating_services",
+    "name": "RotatingServices",
+    "tag": "div",
+    "rect": {
+      "x": 311,
+      "y": -9301,
+      "width": 819,
+      "height": 96
+    },
+    "preview": "Application Develo...",
+    "status": "COPY_USE_CERTIFIED"
+  }
+]

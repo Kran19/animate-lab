@@ -1,0 +1,9 @@
+/* Scoped CSS Module for ProjectCallToActionSection */
+.sectionRoot {
+  width: 100%;
+  min-height: 5286px;
+  position: relative;
+  overflow: hidden;
+  background: #0a0a0c;
+  color: #ffffff;
+}

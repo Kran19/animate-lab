@@ -1,0 +1,24 @@
+{
+  "name": "ServicesGridSection",
+  "id": "03-services-grid",
+  "version": "1.0.0",
+  "entry": "ServicesGridSection.tsx",
+  "style": "ServicesGridSection.module.css",
+  "status": "COPY_USE_CERTIFIED",
+  "dimensions": {
+    "x": 0,
+    "y": 1600,
+    "width": 1440,
+    "height": 800
+  },
+  "scores": {
+    "discoveryRecall": 100,
+    "isolationPrecision": 100,
+    "packageUsability": 100,
+    "assetCompleteness": 100,
+    "animationFidelity": 95,
+    "interactionFidelity": 98,
+    "responsiveFidelity": 100,
+    "overall": 98.2
+  }
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "pointermove",
+    "target": "#magnetic-reel-btn",
+    "behavior": "Magnetic button follow with spring damping",
+    "status": "REPRODUCED"
+  }
+]

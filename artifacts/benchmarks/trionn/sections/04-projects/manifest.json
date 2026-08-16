@@ -1,0 +1,7 @@
+{
+  "name": "FeaturedProjectsGrid",
+  "version": "1.0.0",
+  "entry": "FeaturedProjectsGrid.tsx",
+  "style": "FeaturedProjectsGrid.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

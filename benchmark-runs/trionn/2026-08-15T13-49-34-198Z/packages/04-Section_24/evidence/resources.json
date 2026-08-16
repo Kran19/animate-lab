@@ -1,0 +1,27 @@
+[
+  {
+    "original": "https://trionn.com/images/malte.webp",
+    "local": "assets/asset_1.webp",
+    "size": 22820
+  },
+  {
+    "original": "https://trionn.com/images/stephen.webp",
+    "local": "assets/asset_2.webp",
+    "size": 39834
+  },
+  {
+    "original": "https://trionn.com/images/doug.webp",
+    "local": "assets/asset_3.webp",
+    "size": 31186
+  },
+  {
+    "original": "https://trionn.com/images/jean.webp",
+    "local": "assets/asset_4.webp",
+    "size": 34276
+  },
+  {
+    "original": "https://trionn.com/images/zoltan.webp",
+    "local": "assets/asset_5.webp",
+    "size": 29634
+  }
+]

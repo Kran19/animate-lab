@@ -9,7 +9,7 @@ import { CrawlMode, CaptureSettings } from '../../domain/types';
 import { Globe, Layers, Sparkles, Box, Check, ArrowRight, ArrowLeft, Play, AlertCircle } from 'lucide-react';
 
 export const CaptureWizardModal: React.FC = () => {
-  const { isCaptureWizardOpen, setCaptureWizardOpen, refreshData, navigate } = useApp();
+  const { isCaptureWizardOpen, setCaptureWizardOpen, refreshData, navigate, startCaptureJob } = useApp();
 
   const [step, setStep] = useState<1 | 2 | 3>(1);
   const [url, setUrl] = useState('');
@@ -70,10 +70,11 @@ export const CaptureWizardModal: React.FC = () => {
 
     try {
       const newWebsite = await services.websites.create(url, name, settings, tags);
+      await startCaptureJob(newWebsite.id, settings);
       await refreshData();
       handleClose();
-      // Navigate to website detail or jobs screen
-      navigate('website_detail', { websiteId: newWebsite.id });
+      // Navigate to mission control jobs screen
+      navigate('jobs', { websiteId: newWebsite.id });
     } catch (err) {
       console.error('Failed to create capture project:', err);
     } finally {

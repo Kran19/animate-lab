@@ -1,0 +1,7 @@
+[
+  {
+    "trigger": "click",
+    "target": "#sound-btn",
+    "behavior": "Toggles WebAudio synth channel"
+  }
+]

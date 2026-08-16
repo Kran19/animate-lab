@@ -1,0 +1,9 @@
+[
+  {
+    "name": "heroFadeIn",
+    "type": "GSAP Timeline",
+    "trigger": "load",
+    "durationMs": 1200,
+    "status": "REPRODUCED"
+  }
+]

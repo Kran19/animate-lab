@@ -1,0 +1,12 @@
+{
+  "name": "Grid",
+  "id": "15-grid",
+  "entry": "Grid.tsx",
+  "style": "Grid.module.css",
+  "dimensions": {
+    "x": 752,
+    "y": -8273,
+    "width": 584,
+    "height": 93
+  }
+}

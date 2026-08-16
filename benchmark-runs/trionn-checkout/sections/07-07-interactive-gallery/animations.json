@@ -1,0 +1,10 @@
+[
+  {
+    "name": "horizontalRailPan",
+    "type": "GSAP ScrollTrigger Pin",
+    "trigger": "scroll",
+    "durationMs": 1200,
+    "easing": "none",
+    "status": "REPRODUCED"
+  }
+]

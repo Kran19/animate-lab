@@ -1,0 +1,10 @@
+{
+  "interactiveElements": [
+    {
+      "tag": "a",
+      "text": "View on Dribbble",
+      "role": "",
+      "cursor": "pointer"
+    }
+  ]
+}

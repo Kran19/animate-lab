@@ -1,0 +1,12 @@
+{
+  "name": "Services",
+  "id": "06-services",
+  "entry": "Services.tsx",
+  "style": "Services.module.css",
+  "dimensions": {
+    "x": 0,
+    "y": -8034,
+    "width": 1440,
+    "height": 582
+  }
+}

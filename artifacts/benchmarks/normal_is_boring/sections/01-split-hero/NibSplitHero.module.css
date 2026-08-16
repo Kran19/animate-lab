@@ -1,0 +1,1 @@
+.nib-hero { height: 100vh; display: grid; grid-template-columns: 1fr 1fr; font-family: 'Impact', sans-serif; text-transform: uppercase; font-size: 3.5rem; } .left { background: #fff; color: #000; display: flex; align-items: center; justify-content: center; } .right { background: #000; color: #fff; display: flex; align-items: center; justify-content: center; }

@@ -1,0 +1,7 @@
+{
+  "name": "ArtemBoard",
+  "version": "1.0.0",
+  "entry": "ArtemBoard.tsx",
+  "style": "ArtemBoard.module.css",
+  "status": "COPY_USE_PARTIAL"
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "floatIcons",
+    "type": "THREE_JS",
+    "trigger": "continuous",
+    "durationMs": 16
+  }
+]

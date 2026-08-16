@@ -1,0 +1,58 @@
+{
+  "interactiveElements": [
+    {
+      "tag": "a",
+      "text": "view all projects",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "Explore project",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "Explore project",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "Explore project",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "view all projects",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "view services",
+      "role": "",
+      "cursor": "pointer"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Spline3DModelSection",
+  "version": "1.0.0",
+  "entry": "Spline3DModelSection.tsx",
+  "style": "Spline3DModelSection.module.css",
+  "status": "COPY_USE_PARTIAL"
+}

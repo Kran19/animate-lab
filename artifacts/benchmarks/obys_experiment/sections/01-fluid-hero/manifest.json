@@ -1,0 +1,7 @@
+{
+  "name": "ObysFluidText",
+  "version": "1.0.0",
+  "entry": "ObysFluidText.tsx",
+  "style": "ObysFluidText.module.css",
+  "status": "COPY_USE_PARTIAL"
+}

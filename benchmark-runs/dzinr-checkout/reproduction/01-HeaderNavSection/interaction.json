@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "hover",
+    "target": ".nav-cta",
+    "behavior": "CTA button scales on hover",
+    "status": "REPRODUCED"
+  }
+]

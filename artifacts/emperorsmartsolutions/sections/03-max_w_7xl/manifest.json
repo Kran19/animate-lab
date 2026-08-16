@@ -1,0 +1,12 @@
+{
+  "name": "MaxW_7xl",
+  "id": "03-max_w_7xl",
+  "entry": "MaxW_7xl.tsx",
+  "style": "MaxW_7xl.module.css",
+  "dimensions": {
+    "x": 80,
+    "y": 0,
+    "width": 1280,
+    "height": 80
+  }
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "fluidShader",
+    "type": "THREE_JS",
+    "trigger": "continuous",
+    "durationMs": 16
+  }
+]

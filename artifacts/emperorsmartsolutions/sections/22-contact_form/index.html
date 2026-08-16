@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact_form — Emperor Smart Solutions Extracted Section</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+    .extracted-container {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="extracted-container">
+    <div class="contact-form">
+                <form id="contactForm" class="space-y-6 p-8 rounded-2xl bg-white/[0.02] border border-white/5">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <input type="text" name="name" required="" placeholder=" " class="form-input" id="nameInput" style="">
+                            <label for="nameInput" class="form-label">Name</label>
+                            <div class="focus-border"></div>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <input type="email" name="email" required="" placeholder=" " class="form-input" id="emailInput" style="">
+                            <label for="emailInput" class="form-label">Email</label>
+                            <div class="focus-border"></div>
+                        </div>
+                    </div>
+
+                    <!-- Message Field - FIXED -->
+                    <div class="form-group">
+                        <textarea name="message" required="" placeholder=" " class="form-input form-textarea" id="messageInput" rows="4" style=""></textarea>
+                        <label for="messageInput" class="form-label">Message</label>
+                        <div class="focus-border"></div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="lucide:loader-2" class="btn-loader iconify animate-spin iconify--lucide"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
+                    </button>
+                </form>
+            </div>
+  </div>
+</body>
+</html>

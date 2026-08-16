@@ -38,6 +38,8 @@ import {
   PrismaStorageRepository
 } from '../database/repositories/prismaRepositories';
 
+import { IPCClient, IPCEventListener } from './ipcClient';
+
 export interface AppServices {
   websites: IWebsiteRepository;
   pages: IPageRepository;
@@ -54,18 +56,45 @@ export interface AppServices {
   isDatabaseActive: boolean;
   isDemoMode: boolean;
   databaseError?: string;
+  ipcClient?: IPCClient;
+  subscribeToEvents?: (callback: IPCEventListener) => () => void;
+  emitEvent?: (event: string, payload: any) => void;
 }
 
 class AppBridge {
   private services: AppServices;
+  private eventListeners: Set<IPCEventListener> = new Set();
+  private ipcClient: IPCClient;
 
-  constructor() {
+  constructor(customMode?: 'sidecar' | 'direct' | 'demo') {
+    this.ipcClient = new IPCClient();
     const isTauri = typeof window !== 'undefined' && '__TAURI_INTERNALS__' in window;
     const isNodeEnv = typeof process !== 'undefined' && process.versions && !!process.versions.node;
-    const isExplicitDemoMode = typeof window !== 'undefined' && (window as any).__ANIMATE_LAB_DEMO_MODE__ === true;
+    const isExplicitDemoMode = customMode === 'demo' || (typeof window !== 'undefined' && (window as any).__ANIMATE_LAB_DEMO_MODE__ === true);
+
+    const subscribeToEvents = (callback: IPCEventListener): () => void => {
+      this.eventListeners.add(callback);
+      return () => {
+        this.eventListeners.delete(callback);
+      };
+    };
+
+    const emitEvent = (event: string, payload: any) => {
+      const ipcEvent = { event, payload, timestamp: new Date().toISOString() };
+      for (const l of this.eventListeners) {
+        try { l(ipcEvent); } catch {}
+      }
+    };
+
+    // Forward IPCClient events
+    this.ipcClient.addEventListener((evt) => {
+      for (const l of this.eventListeners) {
+        try { l(evt); } catch {}
+      }
+    });
 
     // Explicit Demo Mode (e.g. static web preview build)
-    if (isExplicitDemoMode || (!isNodeEnv && !isTauri)) {
+    if (isExplicitDemoMode || (!isNodeEnv && !isTauri && customMode !== 'direct')) {
       this.services = {
         websites: new MockWebsiteRepository(),
         pages: new MockPageRepository(),
@@ -81,6 +110,9 @@ class AppBridge {
         isTauriAvailable: isTauri,
         isDatabaseActive: false,
         isDemoMode: true,
+        ipcClient: this.ipcClient,
+        subscribeToEvents,
+        emitEvent,
       };
       return;
     }
@@ -102,6 +134,9 @@ class AppBridge {
         isTauriAvailable: isTauri,
         isDatabaseActive: true,
         isDemoMode: false,
+        ipcClient: this.ipcClient,
+        subscribeToEvents,
+        emitEvent,
       };
     } catch (err: any) {
       // Database failure in Database Mode triggers an explicit error state.

@@ -1,0 +1,11 @@
+{
+  "display": "flex",
+  "position": "relative",
+  "background": "rgb(4, 5, 8)",
+  "color": "rgb(216, 216, 216)",
+  "padding": "0px",
+  "fontFamily": "neueHaas, \"neueHaas Fallback\", sans-serif",
+  "fontSize": "14.4px",
+  "fontWeight": "400",
+  "lineHeight": "normal"
+}

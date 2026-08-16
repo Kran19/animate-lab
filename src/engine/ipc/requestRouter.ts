@@ -31,6 +31,7 @@ import { ThreeDAnalyzer } from '../analysis/threeDAnalyzer';
 import { SectionDetector } from '../extraction/sectionDetector';
 import { ComponentCandidateClassifier } from '../extraction/componentCandidateClassifier';
 import { ExportPipeline } from '../generation/exportPipeline';
+import { CrawlCoordinator } from '../crawler/crawlCoordinator';
 
 export class RequestRouter {
   private prisma = new PrismaClient();
@@ -50,6 +51,7 @@ export class RequestRouter {
   private contextManager: BrowserContextManager;
   private pageManager: PageManager;
   private resourcePipeline = new ResourcePipeline();
+  private crawlCoordinator: CrawlCoordinator;
 
   private startTime = Date.now();
   private isShutdownRequested = false;
@@ -58,6 +60,10 @@ export class RequestRouter {
     this.browserManager = customBrowserManager || defaultBrowserManager;
     this.contextManager = new BrowserContextManager(this.browserManager);
     this.pageManager = new PageManager(this.contextManager);
+    this.crawlCoordinator = new CrawlCoordinator({
+      prisma: this.prisma,
+      pageManager: this.pageManager,
+    });
   }
 
   public setShutdownRequested(flag: boolean): void {
@@ -288,6 +294,65 @@ export class RequestRouter {
 
         case IPC_METHODS.STORAGE_CLEANUP:
           return this.createSuccessResponse(requestId, await this.storageRepo.cleanupTempFiles());
+
+        // PHASE 10 CRAWLER & JOB ENDPOINTS
+        case IPC_METHODS.JOB_START: {
+          const { websiteId, settings } = req.params || {};
+          if (!websiteId) {
+            return this.createErrorResponse(requestId, 'VALIDATION_FAILED', 'Missing required parameter "websiteId".');
+          }
+          const job = await this.crawlCoordinator.startJob(websiteId, settings);
+          return this.createSuccessResponse(requestId, { job });
+        }
+
+        case IPC_METHODS.JOB_PAUSE: {
+          const { jobId } = req.params || {};
+          if (!jobId) {
+            return this.createErrorResponse(requestId, 'VALIDATION_FAILED', 'Missing required parameter "jobId".');
+          }
+          const job = await this.crawlCoordinator.pauseJob(jobId);
+          return this.createSuccessResponse(requestId, { job });
+        }
+
+        case IPC_METHODS.JOB_RESUME: {
+          const { jobId } = req.params || {};
+          if (!jobId) {
+            return this.createErrorResponse(requestId, 'VALIDATION_FAILED', 'Missing required parameter "jobId".');
+          }
+          const job = await this.crawlCoordinator.resumeJob(jobId);
+          return this.createSuccessResponse(requestId, { job });
+        }
+
+        case IPC_METHODS.JOB_CANCEL: {
+          const { jobId } = req.params || {};
+          if (!jobId) {
+            return this.createErrorResponse(requestId, 'VALIDATION_FAILED', 'Missing required parameter "jobId".');
+          }
+          const job = await this.crawlCoordinator.cancelJob(jobId);
+          return this.createSuccessResponse(requestId, { job });
+        }
+
+        case IPC_METHODS.JOB_GET_STATUS: {
+          const { jobId } = req.params || {};
+          if (!jobId) {
+            return this.createErrorResponse(requestId, 'VALIDATION_FAILED', 'Missing required parameter "jobId".');
+          }
+          const status = await this.crawlCoordinator.getJobStatus(jobId);
+          return this.createSuccessResponse(requestId, status);
+        }
+
+        case IPC_METHODS.JOB_GET_ALL:
+          return this.createSuccessResponse(requestId, await this.jobRepo.getAllJobs());
+
+        case IPC_METHODS.JOB_GET_BY_ID: {
+          const { id } = req.params || {};
+          return this.createSuccessResponse(requestId, await this.jobRepo.getJobById(id));
+        }
+
+        case IPC_METHODS.JOB_GET_LOGS: {
+          const { jobId } = req.params || {};
+          return this.createSuccessResponse(requestId, await this.jobRepo.getLogsByJobId(jobId));
+        }
 
         // PHASE 7 RUNTIME ANALYSIS ENDPOINTS
         case IPC_METHODS.TECHNOLOGY_DETECT: {

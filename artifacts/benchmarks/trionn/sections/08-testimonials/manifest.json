@@ -1,0 +1,7 @@
+{
+  "name": "TestimonialsSection",
+  "version": "1.0.0",
+  "entry": "TestimonialsSection.tsx",
+  "style": "TestimonialsSection.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "stickyPin",
+    "type": "ScrollTrigger",
+    "trigger": "scroll",
+    "durationMs": 1500
+  }
+]

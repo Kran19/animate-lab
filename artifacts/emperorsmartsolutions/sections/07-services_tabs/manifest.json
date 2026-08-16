@@ -1,0 +1,12 @@
+{
+  "name": "ServicesTabs",
+  "id": "07-services_tabs",
+  "entry": "ServicesTabs.tsx",
+  "style": "ServicesTabs.module.css",
+  "dimensions": {
+    "x": 0,
+    "y": -7453,
+    "width": 1440,
+    "height": 979
+  }
+}

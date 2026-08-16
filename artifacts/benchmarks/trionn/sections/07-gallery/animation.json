@@ -1,0 +1,8 @@
+[
+  {
+    "name": "pan",
+    "type": "ScrollTrigger",
+    "trigger": "scroll",
+    "durationMs": 1000
+  }
+]

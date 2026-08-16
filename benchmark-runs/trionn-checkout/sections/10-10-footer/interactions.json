@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "hover",
+    "target": ".footer-link",
+    "behavior": "Underline expansion animation with color accent",
+    "status": "REPRODUCED"
+  }
+]

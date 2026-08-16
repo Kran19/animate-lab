@@ -1,0 +1,7 @@
+{
+  "name": "MwgHeader",
+  "version": "1.0.0",
+  "entry": "MwgHeader.tsx",
+  "style": "MwgHeader.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

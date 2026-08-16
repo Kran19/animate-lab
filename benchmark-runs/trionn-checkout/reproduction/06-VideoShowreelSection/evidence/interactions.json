@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "click",
+    "target": "#showreel-trigger",
+    "behavior": "Expands fullscreen video modal with sound toggle",
+    "status": "REPRODUCED"
+  }
+]

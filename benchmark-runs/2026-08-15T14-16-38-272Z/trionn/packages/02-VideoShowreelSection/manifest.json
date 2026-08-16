@@ -1,0 +1,22 @@
+{
+  "name": "VideoShowreelSection",
+  "id": "010-video",
+  "version": "1.0.0",
+  "category": "video",
+  "tag": "section",
+  "status": "COPY_USE_CERTIFIED",
+  "geometry": {
+    "x": 0,
+    "y": 3600,
+    "width": 1440,
+    "height": 1081
+  },
+  "typography": {
+    "fontFamily": "neueHaas, \"neueHaas Fallback\", sans-serif",
+    "fontSize": "14.4px",
+    "fontWeight": "400",
+    "lineHeight": "normal",
+    "color": "rgb(216, 216, 216)"
+  },
+  "limitations": []
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "tiltTransform",
+    "type": "GSAP",
+    "trigger": "hover",
+    "durationMs": 300
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "ContactInfoItem",
+  "id": "20-contact_info_item",
+  "entry": "ContactInfoItem.tsx",
+  "style": "ContactInfoItem.module.css",
+  "dimensions": {
+    "x": 168,
+    "y": 172,
+    "width": 520,
+    "height": 70
+  }
+}

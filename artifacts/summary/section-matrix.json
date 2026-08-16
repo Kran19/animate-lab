@@ -1,0 +1,548 @@
+[
+  {
+    "site": "trionn",
+    "sectionId": "01-hero",
+    "name": "HeroSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "trionn",
+    "sectionId": "02-marquee",
+    "name": "InfiniteMarqueeSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "trionn",
+    "sectionId": "03-about",
+    "name": "AboutAgencySection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "trionn",
+    "sectionId": "04-projects",
+    "name": "FeaturedProjectsGrid",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "trionn",
+    "sectionId": "05-3d",
+    "name": "Interactive3DExperience",
+    "status": "COPY_USE_PARTIAL",
+    "score": 100
+  },
+  {
+    "site": "trionn",
+    "sectionId": "06-video",
+    "name": "VideoShowreelSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "trionn",
+    "sectionId": "07-gallery",
+    "name": "InteractiveGallerySection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "trionn",
+    "sectionId": "08-testimonials",
+    "name": "TestimonialsSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "trionn",
+    "sectionId": "09-cta",
+    "name": "CallToActionSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "trionn",
+    "sectionId": "10-footer",
+    "name": "FooterSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "noth_in",
+    "sectionId": "01-nav",
+    "name": "HeaderNavSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "noth_in",
+    "sectionId": "02-marquee",
+    "name": "EditorialMarqueeSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "noth_in",
+    "sectionId": "03-manifesto",
+    "name": "ManifestoSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "noth_in",
+    "sectionId": "04-index",
+    "name": "TypographyIndexGrid",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "noth_in",
+    "sectionId": "05-colophon",
+    "name": "ColophonSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "noth_in",
+    "sectionId": "06-footer",
+    "name": "MinimalFooterSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "cula_tech",
+    "sectionId": "01-hero",
+    "name": "CulaHero",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "cula_tech",
+    "sectionId": "02-telemetry",
+    "name": "TelemetryCardGrid",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "cula_tech",
+    "sectionId": "03-3d-model",
+    "name": "Spline3DModelSection",
+    "status": "COPY_USE_PARTIAL",
+    "score": 100
+  },
+  {
+    "site": "cula_tech",
+    "sectionId": "04-methodology",
+    "name": "MethodologySection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "cula_tech",
+    "sectionId": "05-partners",
+    "name": "PartnersLogoSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "cula_tech",
+    "sectionId": "06-team",
+    "name": "LeadershipTeamSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "cula_tech",
+    "sectionId": "07-cta",
+    "name": "TelemetryCtaSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "cula_tech",
+    "sectionId": "08-footer",
+    "name": "CulaFooterSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "nk_studio",
+    "sectionId": "01-video-hero",
+    "name": "NkVideoHero",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "nk_studio",
+    "sectionId": "02-manifesto",
+    "name": "NkManifesto",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "nk_studio",
+    "sectionId": "03-track",
+    "name": "HorizontalProjectTrack",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "nk_studio",
+    "sectionId": "04-sound",
+    "name": "SoundInteractiveToggle",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "nk_studio",
+    "sectionId": "05-awards",
+    "name": "AwardsDirectory",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "nk_studio",
+    "sectionId": "06-contact",
+    "name": "DirectInquiryModal",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "nk_studio",
+    "sectionId": "07-footer",
+    "name": "NkFooter",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "vero_studio",
+    "sectionId": "01-hero",
+    "name": "VeroHero",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "vero_studio",
+    "sectionId": "02-hover-shader",
+    "name": "ShaderHoverGrid",
+    "status": "COPY_USE_PARTIAL",
+    "score": 100
+  },
+  {
+    "site": "vero_studio",
+    "sectionId": "03-pinned-projects",
+    "name": "PinnedCaseStudies",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "vero_studio",
+    "sectionId": "04-materials",
+    "name": "MaterialityIndex",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "vero_studio",
+    "sectionId": "05-monograph",
+    "name": "MonographPublication",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "vero_studio",
+    "sectionId": "06-contact",
+    "name": "StudioInquirySection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "vero_studio",
+    "sectionId": "07-footer",
+    "name": "VeroFooter",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "ciao_energy",
+    "sectionId": "01-can-hero",
+    "name": "CiaoCanHero",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "ciao_energy",
+    "sectionId": "02-lottie-sparkle",
+    "name": "LottieSparkleSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "ciao_energy",
+    "sectionId": "03-flavors",
+    "name": "FlavorCarouselSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "ciao_energy",
+    "sectionId": "04-ingredients",
+    "name": "OrganicIngredientsGrid",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "ciao_energy",
+    "sectionId": "05-sustainability",
+    "name": "InfinitelyRecyclableCan",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "ciao_energy",
+    "sectionId": "06-locator",
+    "name": "StoreLocatorSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "ciao_energy",
+    "sectionId": "07-pack-cta",
+    "name": "Order12PackSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "ciao_energy",
+    "sectionId": "08-footer",
+    "name": "CiaoFooter",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_home",
+    "sectionId": "01-header",
+    "name": "MwgHeader",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_home",
+    "sectionId": "02-filter-tabs",
+    "name": "CategoryFilterTabs",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_home",
+    "sectionId": "03-masonry",
+    "name": "MwgMasonryGrid",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_home",
+    "sectionId": "04-featured-week",
+    "name": "SiteOfTheWeekBanner",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_home",
+    "sectionId": "05-submit",
+    "name": "SubmitProjectModal",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_home",
+    "sectionId": "06-newsletter",
+    "name": "AnimationWeeklyNewsletter",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_home",
+    "sectionId": "07-sponsor",
+    "name": "SponsorshipDirectory",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_home",
+    "sectionId": "08-footer",
+    "name": "MwgFooter",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_effects",
+    "sectionId": "01-hero",
+    "name": "EffectsHero",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_effects",
+    "sectionId": "02-tilt-demo",
+    "name": "VelocityTiltDemo",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_effects",
+    "sectionId": "03-split-text",
+    "name": "SplitTextPlayground",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_effects",
+    "sectionId": "04-morph-svg",
+    "name": "SvgMorphControls",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_effects",
+    "sectionId": "05-code-export",
+    "name": "SnippetGeneratorSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "made_with_gsap_effects",
+    "sectionId": "06-footer",
+    "name": "EffectsFooter",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "obys_experiment",
+    "sectionId": "01-fluid-hero",
+    "name": "ObysFluidText",
+    "status": "COPY_USE_PARTIAL",
+    "score": 100
+  },
+  {
+    "site": "obys_experiment",
+    "sectionId": "02-noise-warp",
+    "name": "PerlinNoiseWarpSection",
+    "status": "COPY_USE_PARTIAL",
+    "score": 100
+  },
+  {
+    "site": "obys_experiment",
+    "sectionId": "03-audio-synth",
+    "name": "WebAudioVisualizerSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "obys_experiment",
+    "sectionId": "04-cursor-trail",
+    "name": "ParticleCursorTrailSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "obys_experiment",
+    "sectionId": "05-footer",
+    "name": "ObysFooter",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "artem_portfolio",
+    "sectionId": "01-hero-board",
+    "name": "ArtemBoard",
+    "status": "COPY_USE_PARTIAL",
+    "score": 100
+  },
+  {
+    "site": "artem_portfolio",
+    "sectionId": "02-floating-3d",
+    "name": "Floating3DIconsSection",
+    "status": "COPY_USE_PARTIAL",
+    "score": 100
+  },
+  {
+    "site": "artem_portfolio",
+    "sectionId": "03-sticker-wall",
+    "name": "InteractiveStickerWall",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "artem_portfolio",
+    "sectionId": "04-case-studies",
+    "name": "ArtemCaseStudies",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "artem_portfolio",
+    "sectionId": "05-soundboard",
+    "name": "RetroSynthSoundboard",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "artem_portfolio",
+    "sectionId": "06-contact",
+    "name": "ArtemContactSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "artem_portfolio",
+    "sectionId": "07-footer",
+    "name": "ArtemFooter",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "normal_is_boring",
+    "sectionId": "01-split-hero",
+    "name": "NibSplitHero",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "normal_is_boring",
+    "sectionId": "02-manifesto",
+    "name": "BrutalistManifestoSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "normal_is_boring",
+    "sectionId": "03-horizontal-works",
+    "name": "HorizontalWorksRail",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "normal_is_boring",
+    "sectionId": "04-type-specimen",
+    "name": "TypeSpecimenSection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "normal_is_boring",
+    "sectionId": "05-inquiries",
+    "name": "BoldInquirySection",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  },
+  {
+    "site": "normal_is_boring",
+    "sectionId": "06-footer",
+    "name": "NibFooter",
+    "status": "COPY_USE_CERTIFIED",
+    "score": 100
+  }
+]

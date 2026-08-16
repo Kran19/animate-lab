@@ -1,0 +1,10 @@
+[
+  {
+    "name": "infiniteLinearScroll",
+    "type": "CSS Animation",
+    "trigger": "continuous",
+    "durationMs": 16000,
+    "easing": "linear",
+    "status": "REPRODUCED"
+  }
+]

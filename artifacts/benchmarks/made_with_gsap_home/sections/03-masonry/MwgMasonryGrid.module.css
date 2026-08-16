@@ -1,0 +1,1 @@
+.mwg-grid { background: #0e100f; color: #fff; padding: 4rem 2rem; font-family: sans-serif; } .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1200px; margin: 0 auto; } .card { background: #151817; border: 1px solid #242927; padding: 2rem; border-radius: 12px; }

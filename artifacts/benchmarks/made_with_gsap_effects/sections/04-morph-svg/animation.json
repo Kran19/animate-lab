@@ -1,0 +1,8 @@
+[
+  {
+    "name": "pathMorph",
+    "type": "GSAP",
+    "trigger": "load",
+    "durationMs": 1200
+  }
+]

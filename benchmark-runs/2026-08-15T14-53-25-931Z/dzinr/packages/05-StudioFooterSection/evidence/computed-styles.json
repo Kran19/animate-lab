@@ -1,0 +1,7 @@
+{
+  "display": "block",
+  "position": "relative",
+  "background": "oklch(1 0 0)",
+  "color": "oklch(0.145 0 0)",
+  "padding": "140px 32px 20px"
+}

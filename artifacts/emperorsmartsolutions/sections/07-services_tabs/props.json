@@ -1,0 +1,12 @@
+[
+  {
+    "name": "className",
+    "type": "string",
+    "optional": true
+  },
+  {
+    "name": "style",
+    "type": "React.CSSProperties",
+    "optional": true
+  }
+]

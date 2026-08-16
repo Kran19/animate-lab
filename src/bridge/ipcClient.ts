@@ -88,12 +88,19 @@ export class IPCClient {
     }
   }
 
-  public addEventListener(listener: IPCEventListener): void {
+  public addEventListener(listener: IPCEventListener): () => void {
     this.eventListeners.add(listener);
+    return () => {
+      this.eventListeners.delete(listener);
+    };
   }
 
   public removeEventListener(listener: IPCEventListener): void {
     this.eventListeners.delete(listener);
+  }
+
+  public subscribeToEvents(callback: IPCEventListener): () => void {
+    return this.addEventListener(callback);
   }
 
   public async sendRequest<T = any>(method: string, params?: any, timeoutMs = 10000): Promise<T> {
@@ -244,6 +251,12 @@ export class IPCComponentRepository implements IComponentRepository {
   getReusableComponent(candidateId: string): Promise<ReusableComponent | undefined> {
     return this.client.sendRequest(IPC_METHODS.COMPONENT_GET_REUSABLE, { candidateId });
   }
+  exportComponent(candidateId: string, options?: any): Promise<any> {
+    return this.client.sendRequest(IPC_METHODS.COMPONENT_EXPORT, { candidateId, options });
+  }
+  getReusableById(candidateId: string): Promise<ReusableComponent | undefined> {
+    return this.client.sendRequest(IPC_METHODS.COMPONENT_GET_REUSABLE_BY_ID, { candidateId });
+  }
 }
 
 export class IPCAnimationRepository implements IAnimationRepository {
@@ -334,17 +347,23 @@ export class IPCJobRepository implements IJobRepository {
   getLogsByJobId(jobId: string): Promise<DiagnosticLog[]> {
     return this.client.sendRequest(IPC_METHODS.JOB_GET_LOGS, { jobId });
   }
-  pauseJob(id: string): Promise<boolean> {
-    return this.client.sendRequest(IPC_METHODS.JOB_PAUSE, { id });
+  startJob(websiteId: string, settings?: CaptureSettings): Promise<CaptureJob> {
+    return this.client.sendRequest(IPC_METHODS.JOB_START, { websiteId, settings }).then(res => res?.job || res);
   }
-  resumeJob(id: string): Promise<boolean> {
-    return this.client.sendRequest(IPC_METHODS.JOB_RESUME, { id });
+  pauseJob(id: string): Promise<CaptureJob> {
+    return this.client.sendRequest(IPC_METHODS.JOB_PAUSE, { jobId: id }).then(res => res?.job || res);
   }
-  cancelJob(id: string): Promise<boolean> {
-    return this.client.sendRequest(IPC_METHODS.JOB_CANCEL, { id });
+  resumeJob(id: string): Promise<CaptureJob> {
+    return this.client.sendRequest(IPC_METHODS.JOB_RESUME, { jobId: id }).then(res => res?.job || res);
+  }
+  cancelJob(id: string): Promise<CaptureJob> {
+    return this.client.sendRequest(IPC_METHODS.JOB_CANCEL, { jobId: id }).then(res => res?.job || res);
   }
   retryJob(id: string): Promise<boolean> {
     return this.client.sendRequest(IPC_METHODS.JOB_RETRY, { id });
+  }
+  getJobStatus(jobId: string): Promise<{ job: CaptureJob; stats: any }> {
+    return this.client.sendRequest(IPC_METHODS.JOB_GET_STATUS, { jobId });
   }
 }
 

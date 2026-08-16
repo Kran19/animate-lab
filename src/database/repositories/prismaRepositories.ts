@@ -601,6 +601,17 @@ export class PrismaComponentRepository implements IComponentRepository {
       exportedAt: r.exportedAt.toISOString(),
     };
   }
+
+  async exportComponent(candidateId: string, options?: any): Promise<any> {
+    const mod = 'exportPipeline';
+    const { ExportPipeline } = await import(/* @vite-ignore */ `../../engine/generation/${mod}`);
+    const pipeline = new ExportPipeline(getPrismaClient());
+    return pipeline.executeExportPipeline(candidateId, options);
+  }
+
+  async getReusableById(candidateId: string): Promise<ReusableComponent | undefined> {
+    return this.getReusableComponent(candidateId);
+  }
 }
 
 export class PrismaAnimationRepository implements IAnimationRepository {
@@ -801,6 +812,28 @@ export class PrismaJobRepository implements IJobRepository {
     } catch {
       return false;
     }
+  }
+
+  async startJob(websiteId: string, settings?: any): Promise<CaptureJob> {
+    const mod = 'crawlCoordinator';
+    const { CrawlCoordinator } = await import(/* @vite-ignore */ `../../engine/crawler/${mod}`);
+    const coordinator = new CrawlCoordinator({ prisma: getPrismaClient() });
+    return coordinator.startJob(websiteId, settings);
+  }
+
+  async getJobStatus(jobId: string): Promise<{ job: CaptureJob; stats: any }> {
+    const job = await this.getJobById(jobId);
+    if (!job) throw new Error(`Job ${jobId} not found`);
+    return {
+      job,
+      stats: {
+        pending: 0,
+        visited: job.progressPagesCompleted,
+        skipped: 0,
+        failed: job.errorsCount,
+        totalDiscovered: job.progressPagesTotal,
+      },
+    };
   }
 
   async retryJob(id: string): Promise<boolean> {

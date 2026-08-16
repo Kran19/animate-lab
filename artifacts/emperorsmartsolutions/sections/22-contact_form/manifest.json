@@ -1,0 +1,12 @@
+{
+  "name": "ContactForm",
+  "id": "22-contact_form",
+  "entry": "ContactForm.tsx",
+  "style": "ContactForm.module.css",
+  "dimensions": {
+    "x": 752,
+    "y": 24,
+    "width": 520,
+    "height": 414
+  }
+}

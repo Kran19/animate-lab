@@ -1,0 +1,12 @@
+{
+  "hasGsap": false,
+  "hasScrollTrigger": false,
+  "hasCanvas": false,
+  "hasVideo": true,
+  "cssAnimations": [],
+  "cssTransitions": [
+    "all"
+  ],
+  "transform": "none",
+  "opacity": "1"
+}

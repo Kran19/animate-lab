@@ -1,0 +1,7 @@
+[
+  {
+    "trigger": "hover",
+    "target": "#explore-btn",
+    "behavior": "Button scales up"
+  }
+]

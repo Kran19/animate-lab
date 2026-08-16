@@ -1,0 +1,24 @@
+{
+  "name": "TestimonialsSection",
+  "id": "08-testimonials",
+  "version": "1.0.0",
+  "entry": "TestimonialsSection.tsx",
+  "style": "TestimonialsSection.module.css",
+  "status": "COPY_USE_CERTIFIED",
+  "dimensions": {
+    "x": 0,
+    "y": 5664,
+    "width": 1440,
+    "height": 102
+  },
+  "scores": {
+    "discoveryRecall": 100,
+    "isolationPrecision": 100,
+    "packageUsability": 100,
+    "assetCompleteness": 100,
+    "animationFidelity": 96,
+    "interactionFidelity": 98,
+    "responsiveFidelity": 96,
+    "overall": 96.5
+  }
+}

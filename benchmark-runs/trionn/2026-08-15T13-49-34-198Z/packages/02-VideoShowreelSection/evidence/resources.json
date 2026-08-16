@@ -1,0 +1,77 @@
+[
+  {
+    "original": "https://trionn.com/video/awards-card-video.mp4",
+    "local": "assets/asset_1.mp4",
+    "size": 865848
+  },
+  {
+    "original": "https://trionn.com/video/awards-card-video_m.mp4",
+    "local": "assets/asset_2.mp4",
+    "size": 437547
+  },
+  {
+    "original": "https://trionn.com/images/awwwards.svg",
+    "local": "assets/asset_3.svg",
+    "size": 360
+  },
+  {
+    "original": "https://trionn.com/images/ccda.svg",
+    "local": "assets/asset_4.svg",
+    "size": 316
+  },
+  {
+    "original": "https://trionn.com/images/thefwa.svg",
+    "local": "assets/asset_5.svg",
+    "size": 2187
+  },
+  {
+    "original": "https://trionn.com/images/csswinner.svg",
+    "local": "assets/asset_6.svg",
+    "size": 277
+  },
+  {
+    "original": "https://trionn.com/images/adesignaward.svg",
+    "local": "assets/asset_7.svg",
+    "size": 299
+  },
+  {
+    "original": "https://trionn.com/images/gsap.svg",
+    "local": "assets/asset_8.svg",
+    "size": 2754
+  },
+  {
+    "original": "https://trionn.com/video/team/rushi.mp4#t=0.1",
+    "local": "assets/asset_9.mp4",
+    "size": 171550
+  },
+  {
+    "original": "https://trionn.com/video/team/rushi_m.mp4#t=0.1",
+    "local": "assets/asset_10.mp4",
+    "size": 93355
+  },
+  {
+    "original": "https://trionn.com/images/partner1.svg",
+    "local": "assets/asset_11.svg",
+    "size": 5544
+  },
+  {
+    "original": "https://trionn.com/images/partner2.svg",
+    "local": "assets/asset_12.svg",
+    "size": 3019
+  },
+  {
+    "original": "https://trionn.com/images/partner3.svg",
+    "local": "assets/asset_13.svg",
+    "size": 16954
+  },
+  {
+    "original": "https://trionn.com/images/partner4.svg",
+    "local": "assets/asset_14.svg",
+    "size": 2979
+  },
+  {
+    "original": "https://trionn.com/images/partner5.svg",
+    "local": "assets/asset_15.svg",
+    "size": 2895
+  }
+]

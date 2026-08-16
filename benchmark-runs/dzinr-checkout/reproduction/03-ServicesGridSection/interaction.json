@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "hover",
+    "target": ".svc-card",
+    "behavior": "Card lifts up with golden border highlight",
+    "status": "REPRODUCED"
+  }
+]

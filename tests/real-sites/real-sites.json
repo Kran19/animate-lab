@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "description": "AnimateLab Real-World Pilot Websites Manifest",
+  "sites": [
+    {
+      "id": "local_creative_lab",
+      "url": "http://127.0.0.1:4199",
+      "domain": "local_creative_lab",
+      "enabled": true,
+      "viewports": [
+        { "name": "Mobile", "width": 375, "height": 812 },
+        { "name": "Tablet", "width": 768, "height": 1024 },
+        { "name": "Desktop", "width": 1440, "height": 900 },
+        { "name": "Wide", "width": 1920, "height": 1080 }
+      ],
+      "captureDurationMs": 2000,
+      "interactionPolicy": "SAFE_PROBE",
+      "expectedTechnologies": ["gsap", "css", "react"],
+      "expectedSections": ["Header", "Hero", "Story", "CardGrid", "FAQ", "Canvas", "Footer"]
+    },
+    {
+      "id": "trionn_reference",
+      "url": "https://trionn.com",
+      "domain": "trionn_com",
+      "enabled": false,
+      "viewports": [
+        { "name": "Desktop", "width": 1440, "height": 900 }
+      ],
+      "captureDurationMs": 5000,
+      "interactionPolicy": "SAFE_PROBE",
+      "expectedTechnologies": ["gsap", "three", "lenis"]
+    }
+  ]
+}

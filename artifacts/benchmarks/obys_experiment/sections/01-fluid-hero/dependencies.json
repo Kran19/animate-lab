@@ -1,0 +1,8 @@
+{
+  "npm": {
+    "gsap": "^3.12.5"
+  },
+  "browserApis": [
+    "IntersectionObserver"
+  ]
+}

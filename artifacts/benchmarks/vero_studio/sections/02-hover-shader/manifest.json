@@ -1,0 +1,7 @@
+{
+  "name": "ShaderHoverGrid",
+  "version": "1.0.0",
+  "entry": "ShaderHoverGrid.tsx",
+  "style": "ShaderHoverGrid.module.css",
+  "status": "COPY_USE_PARTIAL"
+}

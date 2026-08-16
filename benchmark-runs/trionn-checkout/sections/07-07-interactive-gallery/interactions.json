@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "drag",
+    "target": "#gallery-rail",
+    "behavior": "Inertial horizontal drag scrolling with velocity decay",
+    "status": "REPRODUCED"
+  }
+]

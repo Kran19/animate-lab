@@ -1,0 +1,1 @@
+.marquee-sec { background: #ff3366; padding: 1.5rem 0; overflow: hidden; white-space: nowrap; font-family: 'Inter', sans-serif; font-weight: 900; font-size: 1.75rem; color: #000; } .track { display: inline-block; animation: scroll-left 15s linear infinite; } @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }

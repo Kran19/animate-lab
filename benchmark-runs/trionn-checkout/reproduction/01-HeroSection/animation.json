@@ -1,0 +1,10 @@
+[
+  {
+    "name": "heroTextReveal",
+    "type": "GSAP SplitText",
+    "trigger": "load",
+    "durationMs": 1400,
+    "easing": "power3.out",
+    "status": "REPRODUCED"
+  }
+]

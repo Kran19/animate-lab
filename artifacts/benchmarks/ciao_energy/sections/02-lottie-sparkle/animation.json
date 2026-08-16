@@ -1,0 +1,8 @@
+[
+  {
+    "name": "lottiePlay",
+    "type": "LOTTIE",
+    "trigger": "continuous",
+    "durationMs": 3000
+  }
+]

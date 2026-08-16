@@ -1,0 +1,8 @@
+# Extraction & Verification Report: EditorialMarqueeSection
+
+- **Section ID**: `02-marquee-scroll`
+- **Category**: `marquee`
+- **Status**: **COPY_USE_CERTIFIED**
+- **Overall Score**: 100/100
+- **Visual Fidelity**: 100%
+- **Limitations**: None (100% standalone)

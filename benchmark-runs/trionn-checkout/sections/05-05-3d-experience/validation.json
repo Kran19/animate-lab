@@ -1,0 +1,13 @@
+{
+  "status": "COPY_USE_PARTIAL",
+  "scores": {
+    "discoveryRecall": 100,
+    "isolationPrecision": 100,
+    "packageUsability": 100,
+    "assetCompleteness": 85,
+    "animationFidelity": 80,
+    "interactionFidelity": 85,
+    "responsiveFidelity": 96,
+    "overall": 88
+  }
+}

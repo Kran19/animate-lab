@@ -1,0 +1,7 @@
+[
+  {
+    "trigger": "click",
+    "target": "button",
+    "behavior": "Filter category active state"
+  }
+]

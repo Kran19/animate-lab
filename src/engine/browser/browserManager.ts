@@ -115,3 +115,5 @@ export class BrowserManager {
     return this.browser;
   }
 }
+
+export const defaultBrowserManager = new BrowserManager();

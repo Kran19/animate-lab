@@ -1,0 +1,1 @@
+.gallery-sec { overflow: hidden; background: #0a0a0a; padding: 6rem 0; font-family: 'Inter', sans-serif; } .track { display: flex; gap: 2rem; padding: 0 2rem; } .slide { min-width: 400px; height: 500px; background: #1a1a1a; border-radius: 16px; display: flex; align-items: flex-end; padding: 2rem; font-size: 2rem; color: #fff; }

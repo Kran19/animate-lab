@@ -1,0 +1,10 @@
+[
+  {
+    "name": "videoScaleOnScroll",
+    "type": "GSAP ScrollTrigger",
+    "trigger": "scroll",
+    "durationMs": 1000,
+    "easing": "power2.inOut",
+    "status": "REPRODUCED"
+  }
+]

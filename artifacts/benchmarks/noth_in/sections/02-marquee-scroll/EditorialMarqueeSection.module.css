@@ -1,0 +1,1 @@
+.nothin-marquee { overflow: hidden; white-space: nowrap; padding: 4rem 0; font-family: 'Playfair Display', serif; font-size: 4rem; font-style: italic; background: #faf9f6; } .track { display: inline-block; animation: scroll-nothin 20s linear infinite; } @keyframes scroll-nothin { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }

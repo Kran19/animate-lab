@@ -1,0 +1,10 @@
+[
+  {
+    "name": "cardParallaxRise",
+    "type": "ScrollTrigger Parallax",
+    "trigger": "scroll",
+    "durationMs": 800,
+    "easing": "power1.out",
+    "status": "REPRODUCED"
+  }
+]

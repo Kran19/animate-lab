@@ -1,0 +1,9 @@
+[
+  {
+    "name": "quoteFade",
+    "type": "GSAP",
+    "trigger": "scroll",
+    "durationMs": 800,
+    "status": "REPRODUCED"
+  }
+]

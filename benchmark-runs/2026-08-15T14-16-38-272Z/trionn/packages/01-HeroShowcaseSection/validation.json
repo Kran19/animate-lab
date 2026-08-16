@@ -1,0 +1,6 @@
+{
+  "status": "COPY_USE_PARTIAL",
+  "limitations": [
+    "WebGL Three.js canvas requires GPU context and dynamic viewport resize listener."
+  ]
+}

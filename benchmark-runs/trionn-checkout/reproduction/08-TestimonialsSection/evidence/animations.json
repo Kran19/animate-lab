@@ -1,0 +1,10 @@
+[
+  {
+    "name": "quoteFadeSlide",
+    "type": "GSAP Timeline",
+    "trigger": "scroll",
+    "durationMs": 800,
+    "easing": "power2.out",
+    "status": "REPRODUCED"
+  }
+]

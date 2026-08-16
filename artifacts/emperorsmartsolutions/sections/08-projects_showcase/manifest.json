@@ -1,0 +1,12 @@
+{
+  "name": "ProjectsShowcase",
+  "id": "08-projects_showcase",
+  "entry": "ProjectsShowcase.tsx",
+  "style": "ProjectsShowcase.module.css",
+  "dimensions": {
+    "x": 0,
+    "y": -6474,
+    "width": 1440,
+    "height": 4140
+  }
+}

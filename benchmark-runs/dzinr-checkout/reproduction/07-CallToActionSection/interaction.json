@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "hover",
+    "target": ".cta-button",
+    "behavior": "Spring scale button on hover",
+    "status": "REPRODUCED"
+  }
+]

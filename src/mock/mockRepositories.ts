@@ -42,15 +42,17 @@ import {
   MOCK_STORAGE_STATS
 } from './mockData';
 
-export class MockWebsiteRepository implements IWebsiteRepository {
-  private websites = [...MOCK_WEBSITES];
+export const SHARED_MOCK_WEBSITES: Website[] = [...MOCK_WEBSITES];
+export const SHARED_MOCK_SECTIONS: Section[] = [...MOCK_SECTIONS];
+export const SHARED_MOCK_COMPONENTS: ComponentCandidate[] = [...MOCK_COMPONENT_CANDIDATES];
 
+export class MockWebsiteRepository implements IWebsiteRepository {
   async getAll(): Promise<Website[]> {
-    return Promise.resolve(this.websites);
+    return Promise.resolve(SHARED_MOCK_WEBSITES);
   }
 
   async getById(id: string): Promise<Website | undefined> {
-    return Promise.resolve(this.websites.find(w => w.id === id));
+    return Promise.resolve(SHARED_MOCK_WEBSITES.find(w => w.id === id));
   }
 
   async create(url: string, name: string, settings: CaptureSettings, tags: string[] = []): Promise<Website> {
@@ -75,21 +77,25 @@ export class MockWebsiteRepository implements IWebsiteRepository {
       lastAnalyzedAt: new Date().toISOString(),
       storagePath: `D:\\WebExperienceLab\\websites\\website-${Date.now()}`
     };
-    this.websites.unshift(newSite);
+    SHARED_MOCK_WEBSITES.unshift(newSite);
     return Promise.resolve(newSite);
   }
 
   async update(website: Website): Promise<Website> {
-    const idx = this.websites.findIndex(w => w.id === website.id);
+    const idx = SHARED_MOCK_WEBSITES.findIndex(w => w.id === website.id);
     if (idx !== -1) {
-      this.websites[idx] = website;
+      SHARED_MOCK_WEBSITES[idx] = website;
     }
     return Promise.resolve(website);
   }
 
   async delete(id: string): Promise<boolean> {
-    this.websites = this.websites.filter(w => w.id !== id);
-    return Promise.resolve(true);
+    const idx = SHARED_MOCK_WEBSITES.findIndex(w => w.id === id);
+    if (idx !== -1) {
+      SHARED_MOCK_WEBSITES.splice(idx, 1);
+      return Promise.resolve(true);
+    }
+    return Promise.resolve(false);
   }
 }
 
@@ -169,8 +175,32 @@ export class MockComponentRepository implements IComponentRepository {
       ],
       exportFormat: 'react_tailwind',
       version: '1.0.0',
-      exportedAt: cand.updatedAt
+      exportedAt: cand.updatedAt,
     });
+  }
+  async exportComponent(candidateId: string, options?: any): Promise<any> {
+    const cand = this.candidates.find(c => c.id === candidateId);
+    return Promise.resolve({
+      success: true,
+      candidateId,
+      componentName: cand?.title.replace(/[^a-zA-Z0-9]/g, '') || 'Component',
+      packageDir: `workspaces/exports/${candidateId}`,
+      manifest: {
+        name: cand?.title || 'Component',
+        version: '1.0.0',
+        exportFormat: options?.exportFormat || 'react_tailwind',
+      },
+      files: [
+        { relativePath: 'Component.tsx', sizeBytes: 1200, contentHash: 'sha256-mock-tsx' },
+        { relativePath: 'Component.module.css', sizeBytes: 450, contentHash: 'sha256-mock-css' },
+        { relativePath: 'manifest.json', sizeBytes: 300, contentHash: 'sha256-mock-manifest' },
+      ],
+      isPartial: false,
+    });
+  }
+
+  async getReusableById(candidateId: string): Promise<ReusableComponent | undefined> {
+    return this.getReusableComponent(candidateId);
   }
 }
 
@@ -312,6 +342,93 @@ export class MockJobRepository implements IJobRepository {
       job.currentAction = 'Job canceled by user';
     }
     return Promise.resolve(true);
+  }
+
+  async startJob(websiteId: string, settings?: any): Promise<CaptureJob> {
+    const website = SHARED_MOCK_WEBSITES.find(w => w.id === websiteId);
+    const targetUrl = website?.url || 'https://dzinr.in/';
+    const targetName = website?.name || targetUrl.replace(/^https?:\/\//, '').split('/')[0];
+
+    const totalSteps = 6;
+    const newJob: CaptureJob = {
+      id: `job-${Date.now()}`,
+      websiteId,
+      websiteName: targetName,
+      websiteUrl: targetUrl,
+      status: 'running',
+      progressPagesCompleted: 0,
+      progressPagesTotal: totalSteps,
+      capturedResourcesCount: 0,
+      discoveredAnimationsCount: 0,
+      discoveredSectionsCount: 0,
+      extractedComponentsCount: 0,
+      currentAction: `Launching Playwright browser for ${targetUrl}...`,
+      startTime: new Date().toISOString(),
+      warningsCount: 0,
+      errorsCount: 0,
+    };
+    this.jobs.unshift(newJob);
+
+    // Active real-time progress emitter for browser UI
+    if (typeof window !== 'undefined') {
+      const steps = [
+        { progress: 1, action: `Navigating to ${targetUrl} (1440x900 viewport)...`, resources: 12, sections: 1, anims: 2, comps: 1 },
+        { progress: 2, action: `Harvesting live stylesheet cascade and @font-face declarations...`, resources: 38, sections: 3, anims: 5, comps: 3 },
+        { progress: 3, action: `Executing Multi-Signal Section Discovery on live DOM...`, resources: 64, sections: 6, anims: 8, comps: 5 },
+        { progress: 4, action: `Extracting GSAP ScrollTrigger timelines & computed style tree...`, resources: 92, sections: 8, anims: 12, comps: 7 },
+        { progress: 5, action: `Generating standalone React TSX and Scoped CSS Modules...`, resources: 118, sections: 8, anims: 14, comps: 8 },
+        { progress: 6, action: `Clean-room browser verification completed with 100% fidelity.`, resources: 135, sections: 8, anims: 16, comps: 8, status: 'completed' },
+      ];
+
+      let stepIdx = 0;
+      const interval = setInterval(() => {
+        if (stepIdx < steps.length) {
+          const s = steps[stepIdx];
+          newJob.progressPagesCompleted = s.progress;
+          newJob.currentAction = s.action;
+          newJob.capturedResourcesCount = s.resources;
+          newJob.discoveredSectionsCount = s.sections;
+          newJob.discoveredAnimationsCount = s.anims;
+          newJob.extractedComponentsCount = s.comps;
+          if (s.status) newJob.status = s.status as any;
+
+          // Dispatch event to window for store listeners
+          window.dispatchEvent(new CustomEvent('animatelab:job_progress', {
+            detail: {
+              jobId: newJob.id,
+              websiteId,
+              websiteName: targetName,
+              websiteUrl: targetUrl,
+              action: s.action,
+              stats: { visited: s.progress, totalDiscovered: totalSteps, failed: 0 },
+              discoveredSections: s.sections,
+              extractedComponents: s.comps,
+              status: s.status || 'running',
+            }
+          }));
+
+          stepIdx++;
+        } else {
+          clearInterval(interval);
+        }
+      }, 1500);
+    }
+
+    return Promise.resolve(newJob);
+  }
+
+  async getJobStatus(jobId: string): Promise<{ job: CaptureJob; stats: any }> {
+    const job = this.jobs.find(j => j.id === jobId) || this.jobs[0];
+    return Promise.resolve({
+      job,
+      stats: {
+        pending: 5,
+        visited: job.progressPagesCompleted,
+        skipped: 0,
+        failed: job.errorsCount,
+        totalDiscovered: job.progressPagesTotal,
+      },
+    });
   }
 
   async retryJob(id: string): Promise<boolean> {

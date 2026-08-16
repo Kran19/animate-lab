@@ -1,0 +1,8 @@
+[
+  {
+    "name": "editorialScroll",
+    "type": "CSS_KEYFRAMES",
+    "trigger": "continuous",
+    "durationMs": 20000
+  }
+]

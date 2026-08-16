@@ -1,0 +1,7 @@
+[
+  {
+    "trigger": "click",
+    "target": ".can",
+    "behavior": "Card expands with active flavor background"
+  }
+]

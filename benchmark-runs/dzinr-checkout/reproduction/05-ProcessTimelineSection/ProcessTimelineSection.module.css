@@ -1,0 +1,27 @@
+
+        .dzinr-process {
+          background: #0e1017;
+          color: #fff;
+          padding: 7rem 2rem;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          text-align: center;
+        }
+        .process-container { max-width: 1250px; margin: 0 auto; }
+        .process-badge { color: #f59e0b; font-family: monospace; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.1em; }
+        .process-container h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0.5rem 0 4rem; }
+        .steps-row {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 2rem;
+          text-align: left;
+        }
+        .step-box {
+          background: rgba(255, 255, 255, 0.02);
+          border-top: 2px solid #f59e0b;
+          padding: 2rem;
+          border-radius: 0 0 12px 12px;
+        }
+        .step-num { font-family: monospace; color: #f59e0b; font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 1rem; }
+        .step-box h4 { font-size: 1.25rem; font-weight: 800; margin: 0 0 0.5rem; color: #fff; }
+        .step-box p { color: #94a3b8; font-size: 0.9rem; line-height: 1.5; margin: 0; }
+      

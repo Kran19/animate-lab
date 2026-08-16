@@ -1,0 +1,46 @@
+
+      .testi-wrapper {
+        background: #0d0f14;
+        color: #fff;
+        padding: 7rem 2rem;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      .testi-container { max-width: 900px; margin: 0 auto; }
+      .testi-badge {
+        color: #ff3366;
+        font-family: monospace;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+      .testi-quote {
+        font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+        font-weight: 500;
+        font-style: italic;
+        line-height: 1.4;
+        margin: 0 0 3rem;
+        color: #f8fafc;
+      }
+      .testi-author {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        text-align: left;
+      }
+      .author-avatar {
+        width: 50px;
+        height: 50px;
+        background: #ff3366;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+      }
+      .author-name { font-weight: 800; font-size: 1.1rem; }
+      .author-title { color: #94a3b8; font-size: 0.9rem; }
+    

@@ -1,0 +1,9 @@
+/* Scoped CSS Module for StudioFooterSection */
+.sectionRoot {
+  width: 100%;
+  min-height: 905px;
+  position: relative;
+  overflow: hidden;
+  background: #0a0a0c;
+  color: #ffffff;
+}

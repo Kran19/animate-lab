@@ -1,0 +1,7 @@
+{
+  "name": "SnippetGeneratorSection",
+  "version": "1.0.0",
+  "entry": "SnippetGeneratorSection.tsx",
+  "style": "SnippetGeneratorSection.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

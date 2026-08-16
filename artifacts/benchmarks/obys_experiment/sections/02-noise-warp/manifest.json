@@ -1,0 +1,7 @@
+{
+  "name": "PerlinNoiseWarpSection",
+  "version": "1.0.0",
+  "entry": "PerlinNoiseWarpSection.tsx",
+  "style": "PerlinNoiseWarpSection.module.css",
+  "status": "COPY_USE_PARTIAL"
+}

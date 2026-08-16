@@ -1,0 +1,8 @@
+[
+  {
+    "name": "rippleEffect",
+    "type": "THREE_JS",
+    "trigger": "hover",
+    "durationMs": 800
+  }
+]

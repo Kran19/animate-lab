@@ -1,0 +1,12 @@
+{
+  "name": "Contact",
+  "id": "12-contact",
+  "entry": "Contact.tsx",
+  "style": "Contact.module.css",
+  "dimensions": {
+    "x": 0,
+    "y": -72,
+    "width": 1440,
+    "height": 606
+  }
+}

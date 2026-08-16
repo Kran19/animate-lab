@@ -118,9 +118,11 @@ export const IPC_METHODS = {
   JOB_GET_ALL: 'job.getAll',
   JOB_GET_BY_ID: 'job.getById',
   JOB_GET_LOGS: 'job.getLogs',
+  JOB_START: 'job.start',
   JOB_PAUSE: 'job.pause',
   JOB_RESUME: 'job.resume',
   JOB_CANCEL: 'job.cancel',
+  JOB_GET_STATUS: 'job.getStatus',
   JOB_RETRY: 'job.retry',
 
   STORAGE_GET_STATS: 'storage.getStats',

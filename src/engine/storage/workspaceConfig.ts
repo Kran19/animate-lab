@@ -1,5 +1,42 @@
-import path from 'path';
-import fs from 'fs';
+const isNode = typeof process !== 'undefined' && !!process.versions?.node;
+
+function safeResolve(...segments: string[]): string {
+  if (isNode) {
+    try {
+      const p = require('path');
+      return p.resolve(...segments);
+    } catch {
+      // fallback
+    }
+  }
+  return segments.filter(Boolean).join('/').replace(/\/+/g, '/');
+}
+
+function safeJoin(...segments: string[]): string {
+  if (isNode) {
+    try {
+      const p = require('path');
+      return p.join(...segments);
+    } catch {
+      // fallback
+    }
+  }
+  return segments.filter(Boolean).join('/').replace(/\/+/g, '/');
+}
+
+function safeDirname(p: string): string {
+  if (isNode) {
+    try {
+      const pathMod = require('path');
+      return pathMod.dirname(p);
+    } catch {
+      // fallback
+    }
+  }
+  const parts = p.split('/');
+  parts.pop();
+  return parts.join('/') || '/';
+}
 
 export interface WorkspacePaths {
   workspaceRoot: string;
@@ -18,11 +55,10 @@ export class WorkspaceConfig {
   private rootDir: string;
 
   constructor(customRoot?: string) {
-    const isNode = typeof process !== 'undefined' && process.versions?.node;
     const defaultRoot = isNode
-      ? process.env.ANIMATE_LAB_WORKSPACE || path.resolve(process.cwd(), 'workspace-data')
+      ? (typeof process !== 'undefined' && process.env?.ANIMATE_LAB_WORKSPACE) || safeResolve(process.cwd(), 'workspace-data')
       : '/workspace-data';
-    this.rootDir = path.resolve(customRoot || defaultRoot);
+    this.rootDir = safeResolve(customRoot || defaultRoot);
   }
 
   public getWorkspaceRoot(): string {
@@ -30,55 +66,57 @@ export class WorkspaceConfig {
   }
 
   public setWorkspaceRoot(newRoot: string): void {
-    this.rootDir = path.resolve(newRoot);
+    this.rootDir = safeResolve(newRoot);
     this.ensureDirectoryStructure();
   }
 
   public getPaths(): WorkspacePaths {
     return {
       workspaceRoot: this.rootDir,
-      databasePath: path.join(this.rootDir, 'database', 'app.db'),
-      websitesPath: path.join(this.rootDir, 'websites'),
-      assetsPath: path.join(this.rootDir, 'assets'),
-      componentsPath: path.join(this.rootDir, 'components'),
-      capturesPath: path.join(this.rootDir, 'captures'),
-      exportsPath: path.join(this.rootDir, 'exports'),
-      logsPath: path.join(this.rootDir, 'logs'),
-      cachePath: path.join(this.rootDir, 'cache'),
-      tmpPath: path.join(this.rootDir, 'tmp'),
+      databasePath: safeJoin(this.rootDir, 'database', 'app.db'),
+      websitesPath: safeJoin(this.rootDir, 'websites'),
+      assetsPath: safeJoin(this.rootDir, 'assets'),
+      componentsPath: safeJoin(this.rootDir, 'components'),
+      capturesPath: safeJoin(this.rootDir, 'captures'),
+      exportsPath: safeJoin(this.rootDir, 'exports'),
+      logsPath: safeJoin(this.rootDir, 'logs'),
+      cachePath: safeJoin(this.rootDir, 'cache'),
+      tmpPath: safeJoin(this.rootDir, 'tmp'),
     };
   }
 
   public ensureDirectoryStructure(): WorkspacePaths {
     const paths = this.getPaths();
-    const isNode = typeof process !== 'undefined' && process.versions?.node;
     if (!isNode) return paths;
 
-    const dirsToCreate = [
-      this.rootDir,
-      path.dirname(paths.databasePath),
-      paths.websitesPath,
-      paths.assetsPath,
-      paths.componentsPath,
-      paths.capturesPath,
-      paths.exportsPath,
-      paths.logsPath,
-      paths.cachePath,
-      paths.tmpPath,
-    ];
+    try {
+      const fsMod = require('fs');
+      const dirsToCreate = [
+        this.rootDir,
+        safeDirname(paths.databasePath),
+        paths.websitesPath,
+        paths.assetsPath,
+        paths.componentsPath,
+        paths.capturesPath,
+        paths.exportsPath,
+        paths.logsPath,
+        paths.cachePath,
+        paths.tmpPath,
+      ];
 
-    for (const dir of dirsToCreate) {
-      if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
+      for (const dir of dirsToCreate) {
+        if (!fsMod.existsSync(dir)) {
+          fsMod.mkdirSync(dir, { recursive: true });
+        }
       }
-    }
+    } catch {}
 
     return paths;
   }
 
   public validatePathSecurity(targetPath: string): string {
-    const resolved = path.resolve(targetPath);
-    const normalizedRoot = path.resolve(this.rootDir);
+    const resolved = safeResolve(targetPath);
+    const normalizedRoot = safeResolve(this.rootDir);
     if (!resolved.startsWith(normalizedRoot)) {
       throw new Error(`PathSecurityError: Target path "${targetPath}" escapes configured workspace root "${normalizedRoot}"`);
     }

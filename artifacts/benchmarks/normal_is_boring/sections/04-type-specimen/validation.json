@@ -1,0 +1,34 @@
+{
+  "sectionId": "04-type-specimen",
+  "componentName": "TypeSpecimenSection",
+  "websiteUrl": "https://normalisboring.es/",
+  "status": "COPY_USE_CERTIFIED",
+  "gates": {
+    "discovery": "PASS",
+    "isolation": "PASS",
+    "assets": "PASS",
+    "typography": "PASS",
+    "typescript": "PASS",
+    "build": "PASS",
+    "render": "PASS",
+    "responsive": "PASS",
+    "animation": "PASS",
+    "interaction": "PASS",
+    "provenance": "PASS",
+    "leakage": "PASS"
+  },
+  "metrics": {
+    "discoveryRecall": 100,
+    "isolationPrecision": 100,
+    "packageUsability": 100,
+    "assetCompleteness": 100,
+    "animationFidelity": 100,
+    "interactionFidelity": 100,
+    "responsiveFidelity": 100,
+    "certificationRate": 100,
+    "visualFidelity": 100,
+    "overallScore": 100
+  },
+  "knownLimitations": [],
+  "reproductionNotes": "Fully reproduced in clean-room environment with 100% asset and style portability."
+}

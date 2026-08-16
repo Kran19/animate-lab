@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "hover",
+    "target": ".port-item",
+    "behavior": "Card scales up with smooth easing",
+    "status": "REPRODUCED"
+  }
+]

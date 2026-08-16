@@ -1,0 +1,24 @@
+{
+  "name": "HeroShowcaseSection",
+  "id": "02-hero",
+  "version": "1.0.0",
+  "category": "hero",
+  "tag": "div",
+  "status": "COPY_USE_PARTIAL",
+  "geometry": {
+    "x": 0,
+    "y": 0,
+    "width": 1440,
+    "height": 4500
+  },
+  "typography": {
+    "fontFamily": "neueHaas, \"neueHaas Fallback\", sans-serif",
+    "fontSize": "14.4px",
+    "fontWeight": "400",
+    "lineHeight": "normal",
+    "color": "rgb(216, 216, 216)"
+  },
+  "limitations": [
+    "WebGL Three.js canvas requires GPU context and dynamic viewport resize listener."
+  ]
+}

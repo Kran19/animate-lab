@@ -1,0 +1,7 @@
+{
+  "name": "VideoShowreelSection",
+  "version": "1.0.0",
+  "entry": "VideoShowreelSection.tsx",
+  "style": "VideoShowreelSection.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

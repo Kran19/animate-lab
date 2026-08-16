@@ -1,0 +1,8 @@
+[
+  {
+    "name": "heroReveal",
+    "type": "GSAP",
+    "trigger": "load",
+    "durationMs": 1200
+  }
+]

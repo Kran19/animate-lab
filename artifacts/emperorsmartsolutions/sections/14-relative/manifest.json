@@ -1,0 +1,12 @@
+{
+  "name": "Relative",
+  "id": "14-relative",
+  "entry": "Relative.tsx",
+  "style": "Relative.module.css",
+  "dimensions": {
+    "x": 104,
+    "y": -8552,
+    "width": 584,
+    "height": 390
+  }
+}

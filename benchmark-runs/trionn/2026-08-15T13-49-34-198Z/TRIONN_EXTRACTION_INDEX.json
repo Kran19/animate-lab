@@ -1,0 +1,122 @@
+{
+  "sourceUrl": "https://trionn.com/",
+  "pageTitle": "TRIONN | AI-Powered Creative Design & Development Studio in India",
+  "scrollHeight": 6564,
+  "timestamp": "2026-08-15T13-49-34-198Z",
+  "sections": [
+    {
+      "index": 1,
+      "id": "sec-02-hero",
+      "name": "HeroShowcaseSection",
+      "category": "hero",
+      "tag": "div",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 4500
+      },
+      "status": "COPY_USE_PARTIAL",
+      "assets": 1,
+      "animations": "Three.js / WebGL",
+      "interactions": "3 elements",
+      "previewUrl": "./packages/01-HeroShowcaseSection/index.html",
+      "sourceScreenshot": "./packages/01-HeroShowcaseSection/evidence/screenshots/source-desktop.png"
+    },
+    {
+      "index": 2,
+      "id": "sec-10-video",
+      "name": "VideoShowreelSection",
+      "category": "video",
+      "tag": "section",
+      "rect": {
+        "x": 0,
+        "y": 3600,
+        "width": 1440,
+        "height": 1081
+      },
+      "status": "COPY_USE_CERTIFIED",
+      "assets": 15,
+      "animations": "GSAP",
+      "interactions": "None",
+      "previewUrl": "./packages/02-VideoShowreelSection/index.html",
+      "sourceScreenshot": "./packages/02-VideoShowreelSection/evidence/screenshots/source-desktop.png"
+    },
+    {
+      "index": 3,
+      "id": "sec-14-video",
+      "name": "VideoShowreelSection",
+      "category": "video",
+      "tag": "div",
+      "rect": {
+        "x": 0,
+        "y": 4681,
+        "width": 1440,
+        "height": 13050
+      },
+      "status": "COPY_USE_CERTIFIED",
+      "assets": 9,
+      "animations": "GSAP",
+      "interactions": "9 elements",
+      "previewUrl": "./packages/03-VideoShowreelSection/index.html",
+      "sourceScreenshot": "./packages/03-VideoShowreelSection/evidence/screenshots/source-desktop.png"
+    },
+    {
+      "index": 4,
+      "id": "sec-24-section",
+      "name": "Section_24",
+      "category": "section",
+      "tag": "section",
+      "rect": {
+        "x": 0,
+        "y": 16831,
+        "width": 1440,
+        "height": 983
+      },
+      "status": "COPY_USE_CERTIFIED",
+      "assets": 5,
+      "animations": "GSAP",
+      "interactions": "9 elements",
+      "previewUrl": "./packages/04-Section_24/index.html",
+      "sourceScreenshot": "./packages/04-Section_24/evidence/screenshots/source-desktop.png"
+    },
+    {
+      "index": 5,
+      "id": "sec-38-canvas",
+      "name": "Interactive3DExperience",
+      "category": "canvas",
+      "tag": "div",
+      "rect": {
+        "x": 0,
+        "y": 17812,
+        "width": 1440,
+        "height": 6750
+      },
+      "status": "COPY_USE_PARTIAL",
+      "assets": 0,
+      "animations": "Three.js / WebGL",
+      "interactions": "1 elements",
+      "previewUrl": "./packages/05-Interactive3DExperience/index.html",
+      "sourceScreenshot": "./packages/05-Interactive3DExperience/evidence/screenshots/source-desktop.png"
+    },
+    {
+      "index": 6,
+      "id": "sec-39-canvas",
+      "name": "Interactive3DExperience",
+      "category": "canvas",
+      "tag": "footer",
+      "rect": {
+        "x": 0,
+        "y": 23664,
+        "width": 1440,
+        "height": 937
+      },
+      "status": "COPY_USE_PARTIAL",
+      "assets": 1,
+      "animations": "Three.js / WebGL",
+      "interactions": "8 elements",
+      "previewUrl": "./packages/06-Interactive3DExperience/index.html",
+      "sourceScreenshot": "./packages/06-Interactive3DExperience/evidence/screenshots/source-desktop.png"
+    }
+  ]
+}

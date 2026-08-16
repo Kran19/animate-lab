@@ -1,0 +1,9 @@
+[
+  {
+    "name": "particleOrbitCycle",
+    "type": "Three.js Render Loop",
+    "trigger": "continuous",
+    "durationMs": 16,
+    "status": "PARTIAL"
+  }
+]

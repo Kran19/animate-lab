@@ -1,0 +1,47 @@
+[
+  {
+    "original": "https://trionn.com/images/projects/myworker/myworker.jpg",
+    "local": "assets/asset_1.jpg",
+    "size": 339717
+  },
+  {
+    "original": "https://trionn.com/images/projects/myworker/myworker_m.jpg",
+    "local": "assets/asset_2.jpg",
+    "size": 102077
+  },
+  {
+    "original": "https://trionn.com/images/projects/pulse-studio/pulse-studio.jpg",
+    "local": "assets/asset_3.jpg",
+    "size": 103989
+  },
+  {
+    "original": "https://trionn.com/images/projects/pulse-studio/pulse-studio_m.jpg",
+    "local": "assets/asset_4.jpg",
+    "size": 72735
+  },
+  {
+    "original": "https://trionn.com/images/projects/loftloom/loftloom.jpg",
+    "local": "assets/asset_5.jpg",
+    "size": 308623
+  },
+  {
+    "original": "https://trionn.com/images/projects/loftloom/loftloom_m.jpg",
+    "local": "assets/asset_6.jpg",
+    "size": 98782
+  },
+  {
+    "original": "https://trionn.com/images/stone/frame_0001.webp",
+    "local": "assets/asset_7.webp",
+    "size": 4284
+  },
+  {
+    "original": "https://trionn.com/video/homepage-services-video.mp4",
+    "local": "assets/asset_8.mp4",
+    "size": 877274
+  },
+  {
+    "original": "https://trionn.com/video/homepage-services-video_m.mp4",
+    "local": "assets/asset_9.mp4",
+    "size": 452753
+  }
+]

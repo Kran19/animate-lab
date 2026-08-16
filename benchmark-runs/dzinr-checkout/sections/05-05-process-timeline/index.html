@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProcessTimelineSection — DZINR Standalone Section Preview</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0a0a0c; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    
+        .dzinr-process {
+          background: #0e1017;
+          color: #fff;
+          padding: 7rem 2rem;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          text-align: center;
+        }
+        .process-container { max-width: 1250px; margin: 0 auto; }
+        .process-badge { color: #f59e0b; font-family: monospace; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.1em; }
+        .process-container h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0.5rem 0 4rem; }
+        .steps-row {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 2rem;
+          text-align: left;
+        }
+        .step-box {
+          background: rgba(255, 255, 255, 0.02);
+          border-top: 2px solid #f59e0b;
+          padding: 2rem;
+          border-radius: 0 0 12px 12px;
+        }
+        .step-num { font-family: monospace; color: #f59e0b; font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 1rem; }
+        .step-box h4 { font-size: 1.25rem; font-weight: 800; margin: 0 0 0.5rem; color: #fff; }
+        .step-box p { color: #94a3b8; font-size: 0.9rem; line-height: 1.5; margin: 0; }
+      
+  </style>
+</head>
+<body>
+  
+        <section class="dzinr-process">
+          <div class="process-container">
+            <span class="process-badge">METHODOLOGY</span>
+            <h2>OUR PROVEN DELIVERY FRAMEWORK</h2>
+            <div class="steps-row">
+              <div class="step-box">
+                <span class="step-num">STEP 01</span>
+                <h4>Discover & Align</h4>
+                <p>Auditing brand equity, user interviews, and defining KPIs.</p>
+              </div>
+              <div class="step-box">
+                <span class="step-num">STEP 02</span>
+                <h4>Concept & Prototype</h4>
+                <p>Rapid architectural wireframing and motion design validation.</p>
+              </div>
+              <div class="step-box">
+                <span class="step-num">STEP 03</span>
+                <h4>Engineer & Polish</h4>
+                <p>Clean React component development and performance audits.</p>
+              </div>
+              <div class="step-box">
+                <span class="step-num">STEP 04</span>
+                <h4>Scale & Evolve</h4>
+                <p>Continuous testing, conversion optimization, and brand governance.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+</body>
+</html>

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "marqueeLoop",
+    "type": "CSS_KEYFRAMES",
+    "trigger": "continuous",
+    "durationMs": 15000
+  }
+]

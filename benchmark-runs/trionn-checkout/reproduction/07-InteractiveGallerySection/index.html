@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InteractiveGallerySection — Trionn Standalone Section</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #08090c; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    
+      .gallery-wrapper {
+        background: #08090c;
+        color: #fff;
+        padding: 6rem 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        overflow: hidden;
+      }
+      .gallery-head {
+        max-width: 1200px;
+        margin: 0 auto 2.5rem;
+        padding: 0 2rem;
+      }
+      .gallery-head h2 { font-size: 2rem; font-weight: 800; margin: 0 0 0.5rem; }
+      .gallery-head p { color: #94a3b8; font-size: 0.95rem; margin: 0; }
+      .gallery-rail {
+        display: flex;
+        gap: 2rem;
+        padding: 0 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        cursor: grab;
+      }
+      .gallery-card {
+        min-width: 320px;
+        height: 420px;
+        background: #12151e;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        scroll-snap-align: start;
+        transition: border-color 0.2s;
+      }
+      .gallery-card:hover { border-color: #ff3366; }
+      .card-num { font-family: monospace; font-size: 1.5rem; color: #ff3366; font-weight: 900; }
+      .gallery-card h4 { font-size: 1.4rem; font-weight: 800; margin: 0; }
+    
+  </style>
+</head>
+<body>
+  
+      <div class="gallery-wrapper">
+        <div class="gallery-head">
+          <h2>R&D EXPERIMENTS</h2>
+          <p>Drag or swipe horizontally to explore prototypes</p>
+        </div>
+        <div class="gallery-rail">
+          <div class="gallery-card"><span class="card-num">01</span><h4>FLUID SHADERS</h4></div>
+          <div class="gallery-card"><span class="card-num">02</span><h4>SPATIAL AUDIO</h4></div>
+          <div class="gallery-card"><span class="card-num">03</span><h4>AI WORKFLOWS</h4></div>
+          <div class="gallery-card"><span class="card-num">04</span><h4>MICRO KINETICS</h4></div>
+        </div>
+      </div>
+    
+</body>
+</html>

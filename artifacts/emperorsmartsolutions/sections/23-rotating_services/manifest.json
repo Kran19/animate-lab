@@ -1,0 +1,12 @@
+{
+  "name": "RotatingServices",
+  "id": "23-rotating_services",
+  "entry": "RotatingServices.tsx",
+  "style": "RotatingServices.module.css",
+  "dimensions": {
+    "x": 311,
+    "y": -9301,
+    "width": 819,
+    "height": 96
+  }
+}

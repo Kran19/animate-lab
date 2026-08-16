@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "hover",
+    "target": ".big-cta-btn",
+    "behavior": "Spring scale 1.06x with illuminated border glow",
+    "status": "REPRODUCED"
+  }
+]

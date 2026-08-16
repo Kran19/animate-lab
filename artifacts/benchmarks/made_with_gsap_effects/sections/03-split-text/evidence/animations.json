@@ -1,0 +1,8 @@
+[
+  {
+    "name": "charStagger",
+    "type": "GSAP",
+    "trigger": "scroll",
+    "durationMs": 1000
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "name": "PinnedCaseStudies",
+  "version": "1.0.0",
+  "entry": "PinnedCaseStudies.tsx",
+  "style": "PinnedCaseStudies.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

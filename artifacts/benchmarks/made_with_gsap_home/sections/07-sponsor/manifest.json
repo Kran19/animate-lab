@@ -1,0 +1,7 @@
+{
+  "name": "SponsorshipDirectory",
+  "version": "1.0.0",
+  "entry": "SponsorshipDirectory.tsx",
+  "style": "SponsorshipDirectory.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

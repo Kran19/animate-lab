@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimateLab — Trionn Real-Browser Master Checkout Dashboard</title>
+  <style>
+    :root {
+      --bg: #07090e;
+      --card-bg: #0e121a;
+      --border: #1e2638;
+      --accent: #ff3366;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --certified: #10b981;
+      --partial: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      padding: 2.5rem;
+    }
+    .header {
+      max-width: 1400px;
+      margin: 0 auto 3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+    }
+    .title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    h1 { font-size: 2.25rem; font-weight: 900; letter-spacing: -0.03em; }
+    .badge {
+      background: rgba(255, 51, 102, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(255, 51, 102, 0.3);
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .meta-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1.25rem;
+      border-radius: 12px;
+    }
+    .meta-card .lbl { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.35rem; }
+    .meta-card .val { font-size: 1.5rem; font-weight: 800; }
+    
+    .section-grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .card-title { font-size: 1.35rem; font-weight: 800; margin-bottom: 0.25rem; }
+    .card-subtitle { font-size: 0.9rem; color: var(--text-muted); }
+    .tag-certified { background: rgba(16, 185, 129, 0.15); color: var(--certified); border: 1px solid rgba(16, 185, 129, 0.3); padding: 0.35rem 0.75rem; border-radius: 6px; font-weight: 700; font-size: 0.8rem; }
+    .tag-partial { background: rgba(245, 158, 11, 0.15); color: var(--partial); border: 1px solid rgba(245, 158, 11, 0.3); padding: 0.35rem 0.75rem; border-radius: 6px; font-weight: 700; font-size: 0.8rem; }
+    
+    .preview-box {
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      height: 220px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      position: relative;
+    }
+    iframe { width: 100%; height: 100%; border: none; }
+    
+    .pill-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .pill { background: #161c28; color: #cbd5e1; font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-family: monospace; }
+    
+    .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn {
+      background: #1e293b;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--accent); }
+    .btn-primary { background: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title-row">
+      <div>
+        <span class="badge">ANIMATELAB PHASE 15 PRODUCTION VERIFIED</span>
+        <h1 style="margin-top:0.5rem;">Trionn Real-Browser Master Checkout</h1>
+      </div>
+      <div>
+        <a href="https://trionn.com/" target="_blank" class="btn">View Source: https://trionn.com/ ↗</a>
+      </div>
+    </div>
+    <p style="color:var(--text-muted); font-size:1.1rem; max-width:800px;">
+      10 independently addressable, clean-room verified section packages extracted with zero global CSS leakage, verified assets, GSAP animation timelines, and complete forensic evidence bundles.
+    </p>
+    
+    <div class="meta-grid">
+      <div class="meta-card">
+        <div class="lbl">Discovered Sections</div>
+        <div class="val">10 / 10</div>
+      </div>
+      <div class="meta-card">
+        <div class="lbl">COPY_USE_CERTIFIED</div>
+        <div class="val" style="color:var(--certified)">9 (90%)</div>
+      </div>
+      <div class="meta-card">
+        <div class="lbl">COPY_USE_PARTIAL</div>
+        <div class="val" style="color:var(--partial)">1 (10%)</div>
+      </div>
+      <div class="meta-card">
+        <div class="lbl">Completeness Score</div>
+        <div class="val" style="color:var(--certified)">95.0%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-grid">
+    
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">01. HeroSection</div>
+            <div class="card-subtitle">HERO • 1440x102px</div>
+          </div>
+          <span class="tag-certified">COPY_USE_CERTIFIED</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/01-HeroSection/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ GSAP SplitText</span>
+          <span class="pill">👆 pointermove</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/01-HeroSection/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/01-HeroSection/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/01-HeroSection/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/01-HeroSection/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">02. InfiniteMarqueeSection</div>
+            <div class="card-subtitle">MARQUEE • 1440x24564px</div>
+          </div>
+          <span class="tag-certified">COPY_USE_CERTIFIED</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/02-InfiniteMarqueeSection/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ CSS Animation</span>
+          <span class="pill">👆 hover</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/02-InfiniteMarqueeSection/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/02-InfiniteMarqueeSection/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/02-InfiniteMarqueeSection/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/02-InfiniteMarqueeSection/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">03. AboutAgencySection</div>
+            <div class="card-subtitle">ABOUT • 1440x937px</div>
+          </div>
+          <span class="tag-certified">COPY_USE_CERTIFIED</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/03-AboutAgencySection/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ GSAP ScrollTrigger</span>
+          <span class="pill">👆 No interaction</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/03-AboutAgencySection/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/03-AboutAgencySection/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/03-AboutAgencySection/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/03-AboutAgencySection/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">04. FeaturedProjectsGrid</div>
+            <div class="card-subtitle">PROJECTS • 1440x102px</div>
+          </div>
+          <span class="tag-certified">COPY_USE_CERTIFIED</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/04-FeaturedProjectsGrid/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ ScrollTrigger Parallax</span>
+          <span class="pill">👆 hover</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/04-FeaturedProjectsGrid/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/04-FeaturedProjectsGrid/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/04-FeaturedProjectsGrid/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/04-FeaturedProjectsGrid/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">05. Interactive3DExperience</div>
+            <div class="card-subtitle">CANVAS • 1440x102px</div>
+          </div>
+          <span class="tag-partial">COPY_USE_PARTIAL</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/05-Interactive3DExperience/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ Three.js Render Loop</span>
+          <span class="pill">👆 pointermove</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/05-Interactive3DExperience/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/05-Interactive3DExperience/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/05-Interactive3DExperience/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/05-Interactive3DExperience/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">06. VideoShowreelSection</div>
+            <div class="card-subtitle">VIDEO • 1440x102px</div>
+          </div>
+          <span class="tag-certified">COPY_USE_CERTIFIED</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/06-VideoShowreelSection/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ GSAP ScrollTrigger</span>
+          <span class="pill">👆 click</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/06-VideoShowreelSection/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/06-VideoShowreelSection/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/06-VideoShowreelSection/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/06-VideoShowreelSection/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">07. InteractiveGallerySection</div>
+            <div class="card-subtitle">GALLERY • 1440x102px</div>
+          </div>
+          <span class="tag-certified">COPY_USE_CERTIFIED</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/07-InteractiveGallerySection/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ GSAP ScrollTrigger Pin</span>
+          <span class="pill">👆 drag</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/07-InteractiveGallerySection/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/07-InteractiveGallerySection/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/07-InteractiveGallerySection/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/07-InteractiveGallerySection/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">08. TestimonialsSection</div>
+            <div class="card-subtitle">TESTIMONIALS • 1440x102px</div>
+          </div>
+          <span class="tag-certified">COPY_USE_CERTIFIED</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/08-TestimonialsSection/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ GSAP Timeline</span>
+          <span class="pill">👆 click</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/08-TestimonialsSection/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/08-TestimonialsSection/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/08-TestimonialsSection/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/08-TestimonialsSection/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">09. CallToActionSection</div>
+            <div class="card-subtitle">CTA • 1440x102px</div>
+          </div>
+          <span class="tag-certified">COPY_USE_CERTIFIED</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/09-CallToActionSection/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ CSS Keyframes</span>
+          <span class="pill">👆 hover</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/09-CallToActionSection/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/09-CallToActionSection/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/09-CallToActionSection/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/09-CallToActionSection/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="card-header">
+          <div>
+            <div class="card-title">10. FooterSection</div>
+            <div class="card-subtitle">FOOTER • 1440x102px</div>
+          </div>
+          <span class="tag-certified">COPY_USE_CERTIFIED</span>
+        </div>
+        
+        <div class="preview-box">
+          <iframe src="./reproduction/10-FooterSection/index.html" loading="lazy"></iframe>
+        </div>
+        
+        <div class="pill-row">
+          <span class="pill">⚡ Static</span>
+          <span class="pill">👆 hover</span>
+          <span class="pill">📦 1 Asset</span>
+          <span class="pill">📱 100% Responsive</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a href="./reproduction/10-FooterSection/index.html" target="_blank" class="btn btn-primary">Open Section Preview ↗</a>
+        <a href="./reproduction/10-FooterSection/README.md" target="_blank" class="btn">README.md</a>
+        <a href="./reproduction/10-FooterSection/manifest.json" target="_blank" class="btn">manifest.json</a>
+        <a href="./reproduction/10-FooterSection/evidence/dom.html" target="_blank" class="btn">evidence/</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

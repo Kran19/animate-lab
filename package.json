@@ -8,7 +8,16 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "analyze:real-site": "vitest run tests/real_world_extraction_pilot.test.ts",
+    "analyze:batch": "vitest run tests/phase19_workbench_and_python_lab.test.ts",
+    "analyze:external": "vitest run tests/phase23_external_generalization.test.ts --testNamePattern=\"13. Executes full production external-site forensic observation and independent certification\"",
+    "analyze:external-batch": "vitest run tests/phase23_external_generalization.test.ts",
+    "verify:provenance": "vitest run tests/phase23_external_generalization.test.ts --testNamePattern=\"Provenance\"",
+    "verify:determinism": "vitest run tests/phase23_external_generalization.test.ts --testNamePattern=\"Determinism\"",
+    "certify:independent": "vitest run tests/phase23_external_generalization.test.ts --testNamePattern=\"Independent\"",
+    "benchmark:23b": "vitest run tests/phase23b_adversarial_benchmark.test.ts",
+    "benchmark:23c": "vitest run tests/phase23c_blind_benchmark.test.ts"
   },
   "dependencies": {
     "@prisma/client": "6.2.1",

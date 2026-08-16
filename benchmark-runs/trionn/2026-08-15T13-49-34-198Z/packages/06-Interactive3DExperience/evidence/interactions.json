@@ -1,0 +1,52 @@
+{
+  "interactiveElements": [
+    {
+      "tag": "button",
+      "text": "Discuss Your Project",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "Book a 30-minute call",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "hello@trionn.comhello@trionn.com",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "+91 98241 82099+91 98241 82099",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "LinkedinLinkedin",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "FacebookFacebook",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "DribbbleDribbble",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "a",
+      "text": "InstagramInstagram",
+      "role": "",
+      "cursor": "pointer"
+    }
+  ]
+}

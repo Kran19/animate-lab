@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "click",
+    "target": ".tab-indicator",
+    "behavior": "Switches active testimonial review slide",
+    "status": "REPRODUCED"
+  }
+]

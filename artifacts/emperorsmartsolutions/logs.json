@@ -1,0 +1,345 @@
+[
+  {
+    "timestamp": "2026-08-15T12:53:44.258Z",
+    "elapsedMs": 0,
+    "stage": "INIT",
+    "level": "INFO",
+    "message": "Starting live Playwright extraction for http://emperorsmartsolutions.com/"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:44.259Z",
+    "elapsedMs": 1,
+    "stage": "INIT",
+    "level": "INFO",
+    "message": "Artifacts directory prepared at C:\\Users\\PC\\Desktop\\Karan Sir\\animate-lab\\artifacts\\emperorsmartsolutions"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:44.259Z",
+    "elapsedMs": 1,
+    "stage": "BROWSER",
+    "level": "INFO",
+    "message": "Launching Chromium browser instance (headless: true)..."
+  },
+  {
+    "timestamp": "2026-08-15T12:53:44.318Z",
+    "elapsedMs": 60,
+    "stage": "BROWSER",
+    "level": "SUCCESS",
+    "message": "Chromium browser launched successfully"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:44.318Z",
+    "elapsedMs": 60,
+    "stage": "CAPTURE_DESKTOP",
+    "level": "INFO",
+    "message": "Creating 1440x900 desktop browser context..."
+  },
+  {
+    "timestamp": "2026-08-15T12:53:44.364Z",
+    "elapsedMs": 106,
+    "stage": "NAVIGATION",
+    "level": "INFO",
+    "message": "Navigating to http://emperorsmartsolutions.com/ (timeout: 45000ms)..."
+  },
+  {
+    "timestamp": "2026-08-15T12:53:44.980Z",
+    "elapsedMs": 722,
+    "stage": "NAVIGATION",
+    "level": "SUCCESS",
+    "message": "DOM loaded in 616ms"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:47.991Z",
+    "elapsedMs": 3733,
+    "stage": "METADATA",
+    "level": "INFO",
+    "message": "Page Title: \"EmperorSmartSolution - Innovative Tech Solutions\""
+  },
+  {
+    "timestamp": "2026-08-15T12:53:48.898Z",
+    "elapsedMs": 4640,
+    "stage": "CAPTURE_DESKTOP",
+    "level": "SUCCESS",
+    "message": "Desktop full page screenshot captured -> C:\\Users\\PC\\Desktop\\Karan Sir\\animate-lab\\artifacts\\emperorsmartsolutions\\source_screenshots\\desktop-1440x900.png"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:48.901Z",
+    "elapsedMs": 4643,
+    "stage": "SCROLL_ANALYSIS",
+    "level": "INFO",
+    "message": "Total page scroll height: 10670px"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:49.726Z",
+    "elapsedMs": 5468,
+    "stage": "SCROLL_CHECKPOINT",
+    "level": "INFO",
+    "message": "Scroll checkpoint 0% (y: 0px) captured -> C:\\Users\\PC\\Desktop\\Karan Sir\\animate-lab\\artifacts\\emperorsmartsolutions\\source_screenshots\\scroll-checkpoint-0pct.png"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:50.509Z",
+    "elapsedMs": 6251,
+    "stage": "SCROLL_CHECKPOINT",
+    "level": "INFO",
+    "message": "Scroll checkpoint 25% (y: 2442px) captured -> C:\\Users\\PC\\Desktop\\Karan Sir\\animate-lab\\artifacts\\emperorsmartsolutions\\source_screenshots\\scroll-checkpoint-25pct.png"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:51.355Z",
+    "elapsedMs": 7097,
+    "stage": "SCROLL_CHECKPOINT",
+    "level": "INFO",
+    "message": "Scroll checkpoint 50% (y: 4885px) captured -> C:\\Users\\PC\\Desktop\\Karan Sir\\animate-lab\\artifacts\\emperorsmartsolutions\\source_screenshots\\scroll-checkpoint-50pct.png"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:52.207Z",
+    "elapsedMs": 7949,
+    "stage": "SCROLL_CHECKPOINT",
+    "level": "INFO",
+    "message": "Scroll checkpoint 75% (y: 7327px) captured -> C:\\Users\\PC\\Desktop\\Karan Sir\\animate-lab\\artifacts\\emperorsmartsolutions\\source_screenshots\\scroll-checkpoint-75pct.png"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:52.847Z",
+    "elapsedMs": 8589,
+    "stage": "SCROLL_CHECKPOINT",
+    "level": "INFO",
+    "message": "Scroll checkpoint 100% (y: 9770px) captured -> C:\\Users\\PC\\Desktop\\Karan Sir\\animate-lab\\artifacts\\emperorsmartsolutions\\source_screenshots\\scroll-checkpoint-100pct.png"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:52.847Z",
+    "elapsedMs": 8589,
+    "stage": "RESPONSIVE_AUDIT",
+    "level": "INFO",
+    "message": "Testing viewport laptop-1024x768 (1024x768)..."
+  },
+  {
+    "timestamp": "2026-08-15T12:53:56.288Z",
+    "elapsedMs": 12030,
+    "stage": "RESPONSIVE_AUDIT",
+    "level": "SUCCESS",
+    "message": "[laptop-1024x768] No horizontal overflow detected"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:56.295Z",
+    "elapsedMs": 12037,
+    "stage": "RESPONSIVE_AUDIT",
+    "level": "INFO",
+    "message": "Testing viewport tablet-768x1024 (768x1024)..."
+  },
+  {
+    "timestamp": "2026-08-15T12:53:59.811Z",
+    "elapsedMs": 15553,
+    "stage": "RESPONSIVE_AUDIT",
+    "level": "SUCCESS",
+    "message": "[tablet-768x1024] No horizontal overflow detected"
+  },
+  {
+    "timestamp": "2026-08-15T12:53:59.816Z",
+    "elapsedMs": 15558,
+    "stage": "RESPONSIVE_AUDIT",
+    "level": "INFO",
+    "message": "Testing viewport mobile-375x812 (375x812)..."
+  },
+  {
+    "timestamp": "2026-08-15T12:54:02.962Z",
+    "elapsedMs": 18704,
+    "stage": "RESPONSIVE_AUDIT",
+    "level": "SUCCESS",
+    "message": "[mobile-375x812] No horizontal overflow detected"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:02.965Z",
+    "elapsedMs": 18707,
+    "stage": "SECTION_DISCOVERY",
+    "level": "INFO",
+    "message": "Executing multi-signal section discovery algorithm..."
+  },
+  {
+    "timestamp": "2026-08-15T12:54:02.974Z",
+    "elapsedMs": 18716,
+    "stage": "SECTION_DISCOVERY",
+    "level": "SUCCESS",
+    "message": "Discovered 23 candidate visual sections"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:02.974Z",
+    "elapsedMs": 18716,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [01/23]: 01-header (1440x81px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:02.983Z",
+    "elapsedMs": 18725,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [02/23]: 02-hero (1440x900px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:02.989Z",
+    "elapsedMs": 18731,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [03/23]: 03-max_w_7xl (1280x80px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.000Z",
+    "elapsedMs": 18742,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [04/23]: 04-py_10 (1440x110px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.006Z",
+    "elapsedMs": 18748,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [05/23]: 05-about (1440x646px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.014Z",
+    "elapsedMs": 18756,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [06/23]: 06-services (1440x582px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.021Z",
+    "elapsedMs": 18763,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [07/23]: 07-services_tabs (1440x979px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.029Z",
+    "elapsedMs": 18771,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [08/23]: 08-projects_showcase (1440x4140px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.039Z",
+    "elapsedMs": 18781,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [09/23]: 09-py_24 (1440x810px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.049Z",
+    "elapsedMs": 18791,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [10/23]: 10-py_24 (1440x882px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.057Z",
+    "elapsedMs": 18799,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [11/23]: 11-py_24 (1440x570px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.064Z",
+    "elapsedMs": 18806,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [12/23]: 12-contact (1440x606px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.070Z",
+    "elapsedMs": 18812,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [13/23]: 13-bg_midnight (1440x366px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.077Z",
+    "elapsedMs": 18819,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [14/23]: 14-relative (584x390px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.081Z",
+    "elapsedMs": 18823,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [15/23]: 15-grid (584x93px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.087Z",
+    "elapsedMs": 18829,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [16/23]: 16-service_card (395x230px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.093Z",
+    "elapsedMs": 18835,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [17/23]: 17-service_card (395x230px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.098Z",
+    "elapsedMs": 18840,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [18/23]: 18-service_card (395x230px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.105Z",
+    "elapsedMs": 18847,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [19/23]: 19-grid (1104x414px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.111Z",
+    "elapsedMs": 18853,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [20/23]: 20-contact_info_item (520x70px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.117Z",
+    "elapsedMs": 18859,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [21/23]: 21-contact_details (464x70px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.123Z",
+    "elapsedMs": 18865,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [22/23]: 22-contact_form (520x414px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.131Z",
+    "elapsedMs": 18873,
+    "stage": "PACKAGE_SECTION",
+    "level": "INFO",
+    "message": "Extracting section [23/23]: 23-rotating_services (819x96px)"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.190Z",
+    "elapsedMs": 18932,
+    "stage": "BROWSER",
+    "level": "INFO",
+    "message": "Browser closed cleanly."
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.190Z",
+    "elapsedMs": 18932,
+    "stage": "STATS",
+    "level": "SUCCESS",
+    "message": "Full extraction completed in 18.93s"
+  },
+  {
+    "timestamp": "2026-08-15T12:54:03.190Z",
+    "elapsedMs": 18932,
+    "stage": "STATS",
+    "level": "INFO",
+    "message": "Network requests logged: 40, Total payload: 3130.2 KB"
+  }
+]

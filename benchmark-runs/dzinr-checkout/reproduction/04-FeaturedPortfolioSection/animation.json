@@ -1,0 +1,9 @@
+[
+  {
+    "name": "portParallax",
+    "type": "ScrollTrigger",
+    "trigger": "scroll",
+    "durationMs": 800,
+    "status": "REPRODUCED"
+  }
+]

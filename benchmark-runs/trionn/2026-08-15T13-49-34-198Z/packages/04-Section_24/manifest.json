@@ -1,0 +1,24 @@
+{
+  "name": "Section_24",
+  "id": "sec-24-section",
+  "version": "1.0.0",
+  "category": "section",
+  "tag": "section",
+  "status": "COPY_USE_CERTIFIED",
+  "geometry": {
+    "x": 0,
+    "y": 16831,
+    "width": 1440,
+    "height": 983
+  },
+  "typography": {
+    "fontFamily": "neueHaas, \"neueHaas Fallback\", sans-serif",
+    "fontSize": "14.4px",
+    "fontWeight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(216, 216, 216)"
+  },
+  "assetCount": 5,
+  "limitations": []
+}

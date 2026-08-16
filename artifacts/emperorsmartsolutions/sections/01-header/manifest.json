@@ -1,0 +1,12 @@
+{
+  "name": "Header",
+  "id": "01-header",
+  "entry": "Header.tsx",
+  "style": "Header.module.css",
+  "dimensions": {
+    "x": 0,
+    "y": 0,
+    "width": 1440,
+    "height": 81
+  }
+}

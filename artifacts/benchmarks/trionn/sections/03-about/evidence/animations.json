@@ -1,0 +1,8 @@
+[
+  {
+    "name": "textReveal",
+    "type": "GSAP",
+    "trigger": "scroll",
+    "durationMs": 1000
+  }
+]

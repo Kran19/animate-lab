@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "pointermove",
+    "target": "#webgl-canvas",
+    "behavior": "Particle velocity deflection follows mouse vector",
+    "status": "PARTIAL"
+  }
+]

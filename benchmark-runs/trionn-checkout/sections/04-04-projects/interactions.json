@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "hover",
+    "target": ".project-card",
+    "behavior": "Image scale 1.04x and cursor pill reveals project label",
+    "status": "REPRODUCED"
+  }
+]

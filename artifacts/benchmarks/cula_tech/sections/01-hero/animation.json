@@ -1,0 +1,8 @@
+[
+  {
+    "name": "fadeHero",
+    "type": "GSAP",
+    "trigger": "load",
+    "durationMs": 900
+  }
+]

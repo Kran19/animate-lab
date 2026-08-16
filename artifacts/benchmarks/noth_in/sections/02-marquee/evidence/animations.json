@@ -1,0 +1,8 @@
+[
+  {
+    "name": "loop",
+    "type": "CSS_KEYFRAMES",
+    "trigger": "continuous",
+    "durationMs": 20000
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "name": "CategoryFilterTabs",
+  "version": "1.0.0",
+  "entry": "CategoryFilterTabs.tsx",
+  "style": "CategoryFilterTabs.module.css",
+  "status": "COPY_USE_CERTIFIED"
+}

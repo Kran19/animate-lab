@@ -1,0 +1,9 @@
+[
+  {
+    "name": "ctaPulse",
+    "type": "CSS Animation",
+    "trigger": "continuous",
+    "durationMs": 3000,
+    "status": "REPRODUCED"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "BgMidnight",
+  "id": "13-bg_midnight",
+  "entry": "BgMidnight.tsx",
+  "style": "BgMidnight.module.css",
+  "dimensions": {
+    "x": 0,
+    "y": 534,
+    "width": 1440,
+    "height": 366
+  }
+}

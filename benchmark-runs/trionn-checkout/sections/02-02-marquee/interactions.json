@@ -1,0 +1,8 @@
+[
+  {
+    "trigger": "hover",
+    "target": ".marquee-track",
+    "behavior": "Velocity slows down on hover inspection",
+    "status": "REPRODUCED"
+  }
+]

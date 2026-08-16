@@ -1,0 +1,136 @@
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Original Logo Structure -->
+                <div class="flex items-center space-x-2 gsap-logo" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <a href="index.php" class="font-display text-lg tracking-widest font-semibold text-white flex items-center">
+                        <img src="uploads\images\ESS-logo.png" alt="Emperor Logo" class="h-16 w-16">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation with Hover Effects -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.php" class="relative text-slate-400 hover:text-white transition-all duration-300 font-medium group nav-item" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    
+                    <!-- Services Dropdown for Desktop -->
+                    <div class="services-dropdown relative nav-item" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <a href="services.php" class="relative text-slate-400 hover:text-white transition-all duration-300 font-medium group flex items-center">
+                            Services
+                            <span class="services-chevron">
+                                <i class="fas fa-chevron-down text-xs ml-1"></i>
+                            </span>
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu">
+                            <a href="website-development.php" class="mobile-dropdown-item">
+                               Web Development
+                            </a>
+                            <a href="algo-trading.php" class="mobile-dropdown-item">
+                                Algo Trading
+                            </a>
+                            <a href="software-development.php" class="mobile-dropdown-item">
+                                Software Development
+                            </a>
+                            <a href="application-development-service.php" class="mobile-dropdown-item">
+                               Application Development
+                            </a>
+                            <a href="digital-marketing-services.php" class="mobile-dropdown-item">
+                               Digital Marketing
+                            </a>
+                             <a href="ecommerce-website-design.php" class="mobile-dropdown-item">
+                               Ecommerce Website Design
+                            </a>
+                             <a href="mlm-software-services.php" class="mobile-dropdown-item">
+                               MLM Software
+                            </a>
+                             <a href="custom-software-services.php" class="mobile-dropdown-item">
+                               Custom Software Development
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <a href="about.php" class="relative text-slate-400 hover:text-white transition-all duration-300 font-medium group nav-item" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.php" class="relative text-slate-400 hover:text-white transition-all duration-300 font-medium group nav-item" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="blog.php" class="relative text-slate-400 hover:text-white transition-all duration-300 font-medium group nav-item" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        Blog
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.php" class="gsap-get-started" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <button class="magnetic-btn bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full hover:shadow-2xl transition-all duration-300 font-medium relative overflow-hidden group border border-white/10 hover:border-accent/50">
+                            <span class="relative z-10">Get Started</span>
+                            <span class="absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button with Animation -->
+                <button id="hamburger" class="md:hidden flex flex-col justify-center items-center w-10 h-10 relative z-50 focus:outline-none p-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu - Positioned absolutely under header -->
+            <div id="mobile-menu" class="md:hidden">
+                <div class="px-4 pt-2 pb-3 space-y-1">
+                    <a href="index.php" class="mobile-menu-link">Home</a>
+                    
+                    <!-- Services Dropdown for Mobile -->
+                    <div class="mobile-services-dropdown">
+                        <a href="javascript:void(0)" class="mobile-menu-link flex items-center justify-between mobile-dropdown-trigger">
+                            <span>Services</span>
+                            <span class="mobile-dropdown-arrow">
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </span>
+                        </a>
+                        <div class="mobile-dropdown-content">
+                            <a href="website-development.php" class="mobile-dropdown-item">
+                               Web Development
+                            </a>
+                            <a href="algo-trading.php" class="mobile-dropdown-item">
+                                Algo Trading
+                            </a>
+                            <a href="software-development.php" class="mobile-dropdown-item">
+                                Software Development
+                            </a>
+                            <a href="application-development-service.php" class="mobile-dropdown-item">
+                               Application Development
+                            </a>
+                            <a href="digital-marketing-services.php" class="mobile-dropdown-item">
+                               Digital Marketing
+                            </a>
+                             <a href="ecommerce-website-design.php" class="mobile-dropdown-item">
+                               Ecommerce Website Design
+                            </a>
+                             <a href="mlm-software-services.php" class="mobile-dropdown-item">
+                               MLM Software
+                            </a>
+                             <a href="custom-software-services.php" class="mobile-dropdown-item">
+                               Custom Software Development
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <a href="about.php" class="mobile-menu-link">About</a>
+                    <a href="contact.php" class="mobile-menu-link">Contact</a>
+                    <a href="internship.php" class="mobile-menu-link">Apply For internship</a>
+                    <div class="pt-4">
+                        <a href="contact.php" class="block">
+                            <button class="w-full bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-lg hover:shadow-xl transition-all duration-300 font-medium">
+                                Get Started
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>

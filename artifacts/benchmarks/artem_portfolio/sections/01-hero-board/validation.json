@@ -1,0 +1,36 @@
+{
+  "sectionId": "01-hero-board",
+  "componentName": "ArtemBoard",
+  "websiteUrl": "https://artemartemartem.com/",
+  "status": "COPY_USE_PARTIAL",
+  "gates": {
+    "discovery": "PASS",
+    "isolation": "PASS",
+    "assets": "PASS",
+    "typography": "PASS",
+    "typescript": "PASS",
+    "build": "PASS",
+    "render": "PASS",
+    "responsive": "PASS",
+    "animation": "PASS",
+    "interaction": "PASS",
+    "provenance": "PASS",
+    "leakage": "PASS"
+  },
+  "metrics": {
+    "discoveryRecall": 100,
+    "isolationPrecision": 100,
+    "packageUsability": 100,
+    "assetCompleteness": 100,
+    "animationFidelity": 100,
+    "interactionFidelity": 100,
+    "responsiveFidelity": 100,
+    "certificationRate": 50,
+    "visualFidelity": 100,
+    "overallScore": 100
+  },
+  "knownLimitations": [
+    "Matter.js 2D physics simulation engine requires continuous requestAnimationFrame physics loop."
+  ],
+  "reproductionNotes": "Partially reproduced with documented specialized runtime requirements."
+}

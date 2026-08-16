@@ -1,0 +1,58 @@
+{
+  "interactiveElements": [
+    {
+      "tag": "button",
+      "text": "Luxury presence",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "button",
+      "text": "credible",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "button",
+      "text": "Fast resume",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "button",
+      "text": "Technis",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "button",
+      "text": "Ventigence",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "button",
+      "text": "▷ Listen to him!Listen to him!",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "button",
+      "text": "▷ Listen to him!Listen to him!",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "button",
+      "text": "▷ Listen to him!Listen to him!",
+      "role": "",
+      "cursor": "pointer"
+    },
+    {
+      "tag": "button",
+      "text": "become a client",
+      "role": "",
+      "cursor": "pointer"
+    }
+  ]
+}

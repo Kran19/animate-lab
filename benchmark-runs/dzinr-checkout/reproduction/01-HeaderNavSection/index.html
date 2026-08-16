@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HeaderNavSection — DZINR Standalone Section Preview</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0a0a0c; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    
+        .dzinr-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          background: rgba(10, 10, 12, 0.92);
+          backdrop-filter: blur(12px);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          padding: 1.25rem 2rem;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .header-container {
+          max-width: 1300px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .logo { font-size: 1.75rem; font-weight: 900; letter-spacing: -0.03em; color: #fff; }
+        .logo .dot { color: #f59e0b; }
+        .nav-menu { display: flex; gap: 2rem; align-items: center; }
+        .nav-item { color: #94a3b8; text-decoration: none; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; transition: color 0.2s; }
+        .nav-item:hover { color: #fff; }
+        .nav-cta {
+          background: #f59e0b;
+          color: #000;
+          text-decoration: none;
+          padding: 0.6rem 1.4rem;
+          border-radius: 9999px;
+          font-weight: 800;
+          font-size: 0.85rem;
+          transition: transform 0.2s, background 0.2s;
+        }
+        .nav-cta:hover { transform: scale(1.05); background: #fbbf24; }
+      
+  </style>
+</head>
+<body>
+  
+        <header class="dzinr-header">
+          <div class="header-container">
+            <div class="logo">DZINR<span class="dot">.</span></div>
+            <nav class="nav-menu">
+              <a href="#services" class="nav-item">SERVICES</a>
+              <a href="#work" class="nav-item">WORK</a>
+              <a href="#about" class="nav-item">ABOUT</a>
+              <a href="#insights" class="nav-item">INSIGHTS</a>
+              <a href="#contact" class="nav-cta">LET'S TALK →</a>
+            </nav>
+          </div>
+        </header>
+      
+</body>
+</html>

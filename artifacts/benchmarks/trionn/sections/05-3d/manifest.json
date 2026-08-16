@@ -1,0 +1,7 @@
+{
+  "name": "Interactive3DExperience",
+  "version": "1.0.0",
+  "entry": "Interactive3DExperience.tsx",
+  "style": "Interactive3DExperience.module.css",
+  "status": "COPY_USE_PARTIAL"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Floating3DIconsSection",
+  "version": "1.0.0",
+  "entry": "Floating3DIconsSection.tsx",
+  "style": "Floating3DIconsSection.module.css",
+  "status": "COPY_USE_PARTIAL"
+}

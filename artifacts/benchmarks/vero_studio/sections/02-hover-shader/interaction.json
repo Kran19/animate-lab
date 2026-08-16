@@ -1,0 +1,7 @@
+[
+  {
+    "trigger": "hover",
+    "target": "canvas",
+    "behavior": "WebGL fragment shader ripples"
+  }
+]

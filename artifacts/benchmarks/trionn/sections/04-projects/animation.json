@@ -1,0 +1,8 @@
+[
+  {
+    "name": "cardFade",
+    "type": "ScrollTrigger",
+    "trigger": "scroll",
+    "durationMs": 800
+  }
+]
