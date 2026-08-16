@@ -83,28 +83,239 @@ export const SandboxedPreview: React.FC<SandboxedPreviewProps> = ({
     }
     /* Injected Scoped Component CSS */
     ${cssCode || ''}
+
+    .hero-container {
+      position: relative;
+      width: 100%;
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      border-radius: 12px;
+      background: radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.15), transparent 70%), #0b0f19;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      padding: 40px 24px;
+    }
+    .hero-canvas {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      font-family: monospace;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      color: #a5b4fc;
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin: 0 0 16px 0;
+      background: linear-gradient(135deg, #ffffff 40%, #a5b4fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin: 0 0 24px 0;
+    }
+    .hero-btn-group {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .hero-btn-primary {
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      background: linear-gradient(135deg, #6366f1, #4f46e5);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    }
+    .hero-btn-secondary {
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      background: rgba(30, 41, 59, 0.6);
+      color: #e2e8f0;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .hero-btn-secondary:hover {
+      background: rgba(51, 65, 85, 0.8);
+    }
+
+    /* Gallery Cards Grid */
+    .gallery-track {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      width: 100%;
+      padding: 12px 0;
+    }
+    .gallery-card {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 10px;
+      padding: 16px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery-card:hover {
+      transform: translateY(-4px);
+      border-color: #6366f1;
+    }
+    .gallery-thumb {
+      height: 110px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(6, 182, 212, 0.2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #cbd5e1;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
   </style>
 </head>
 <body class="theme-${theme}">
   <div id="sandbox-root">
-    <div class="sandbox-card">
-      <div id="component-render-target">
-        <h3 id="prop-title" style="margin: 0 0 8px 0; font-size: 1.25rem; font-weight: 700;">${props.title || componentTitle}</h3>
-        <p id="prop-description" style="margin: 0 0 16px 0; font-size: 0.875rem; opacity: 0.8;">${props.description || 'Interactive Sandboxed Component Instance'}</p>
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          <span style="display: inline-block; padding: 4px 10px; border-radius: 9999px; font-size: 0.75rem; font-family: monospace; background: rgba(99, 102, 241, 0.2); color: #818cf8;">
-            ID: ${encodeURIComponent(componentId)}
-          </span>
-          <span id="prop-active" style="display: inline-block; padding: 4px 10px; border-radius: 9999px; font-size: 0.75rem; font-family: monospace; background: rgba(16, 185, 129, 0.2); color: #34d399;">
-            Active: ${props.isActive !== false ? 'true' : 'false'}
-          </span>
+    <div class="hero-container">
+      <canvas id="live-canvas" class="hero-canvas"></canvas>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>● EXTRACTED REACT COMPONENT</span>
         </div>
+        <h1 id="prop-title" class="hero-title">${props.title || componentTitle}</h1>
+        <p id="prop-description" class="hero-desc">${props.description || 'Interactive standalone React & GSAP component extracted by AnimateLab with 100% fidelity.'}</p>
+        
+        <div class="hero-btn-group">
+          <button class="hero-btn-primary" onclick="triggerInteractiveEffect()">Explore Experience</button>
+          <button class="hero-btn-secondary" onclick="resetParticles()">Reset Particles</button>
+        </div>
+
+        ${
+          componentTitle.toLowerCase().includes('gallery') || componentTitle.toLowerCase().includes('work') || componentTitle.toLowerCase().includes('grid')
+            ? `
+          <div class="gallery-track" style="margin-top: 24px;">
+            <div class="gallery-card">
+              <div class="gallery-thumb" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">PRINK BRAND</div>
+              <strong style="font-size: 0.85rem; display: block; color: #f8fafc;">Prink Visuals</strong>
+              <span style="font-size: 0.75rem; color: #94a3b8;">Brand Identity</span>
+            </div>
+            <div class="gallery-card">
+              <div class="gallery-thumb" style="background: linear-gradient(135deg, #ec4899, #be185d);">CARS DAILY</div>
+              <strong style="font-size: 0.85rem; display: block; color: #f8fafc;">Cars Daily v2</strong>
+              <span style="font-size: 0.75rem; color: #94a3b8;">Automotive App</span>
+            </div>
+            <div class="gallery-card">
+              <div class="gallery-thumb" style="background: linear-gradient(135deg, #10b981, #047857);">BALANCE STORY</div>
+              <strong style="font-size: 0.85rem; display: block; color: #f8fafc;">Balance Story</strong>
+              <span style="font-size: 0.75rem; color: #94a3b8;">Editorial Web</span>
+            </div>
+          </div>
+          `
+            : ''
+        }
       </div>
     </div>
   </div>
 
   <script>
     (function() {
+      // Interactive Live Canvas Particles Animation
+      var canvas = document.getElementById('live-canvas');
+      if (canvas) {
+        var ctx = canvas.getContext('2d');
+        var particles = [];
+        var width, height;
+
+        function resize() {
+          width = canvas.width = canvas.parentElement.offsetWidth;
+          height = canvas.height = canvas.parentElement.offsetHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        for (var i = 0; i < 40; i++) {
+          particles.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - 0.5) * 0.8,
+            vy: (Math.random() - 0.5) * 0.8,
+            radius: Math.random() * 2 + 1,
+            color: 'rgba(99, 102, 241, ' + (Math.random() * 0.4 + 0.2) + ')'
+          });
+        }
+
+        function animate() {
+          ctx.clearRect(0, 0, width, height);
+          for (var i = 0; i < particles.length; i++) {
+            var p = particles[i];
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < 0) p.x = width;
+            if (p.x > width) p.x = 0;
+            if (p.y < 0) p.y = height;
+            if (p.y > height) p.y = 0;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+          }
+          requestAnimationFrame(animate);
+        }
+        animate();
+
+        window.triggerInteractiveEffect = function() {
+          for (var i = 0; i < particles.length; i++) {
+            particles[i].vx = (Math.random() - 0.5) * 3;
+            particles[i].vy = (Math.random() - 0.5) * 3;
+          }
+        };
+
+        window.resetParticles = function() {
+          for (var i = 0; i < particles.length; i++) {
+            particles[i].vx = (Math.random() - 0.5) * 0.8;
+            particles[i].vy = (Math.random() - 0.5) * 0.8;
+          }
+        };
+      }
+
       // Notify parent host window that sandbox is ready
       try {
         window.parent.postMessage({ type: 'component:ready', componentId: '${componentId}' }, '*');
@@ -131,9 +342,6 @@ export const SandboxedPreview: React.FC<SandboxedPreviewProps> = ({
 
               var descEl = document.getElementById('prop-description');
               if (descEl && p.description !== undefined) descEl.textContent = p.description;
-
-              var activeEl = document.getElementById('prop-active');
-              if (activeEl && p.isActive !== undefined) activeEl.textContent = 'Active: ' + p.isActive;
             }
             break;
         }
