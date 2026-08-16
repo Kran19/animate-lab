@@ -30,6 +30,7 @@ export const JobsScreen: React.FC = () => {
   const {
     jobs,
     loading,
+    navigate,
     activeJob,
     activeJobStats,
     events,

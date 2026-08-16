@@ -79,13 +79,30 @@ export const ComponentsScreen: React.FC = () => {
               className="flex flex-col justify-between space-y-4 overflow-hidden"
             >
               <div className="space-y-3">
-                {/* Thumbnail */}
-                <div className="relative h-40 rounded-lg overflow-hidden border border-border bg-background-muted">
-                  <img src={comp.previewUrl} alt={comp.title} className="w-full h-full object-cover" />
-                  <div className="absolute top-2 right-2">
+                {/* Thumbnail Preview Tile */}
+                <div className="relative h-44 rounded-lg overflow-hidden border border-border bg-gradient-to-br from-background-card via-background-subtle to-background-muted flex items-center justify-center group">
+                  <img
+                    src={comp.previewUrl}
+                    alt={comp.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    onError={(e) => {
+                      (e.target as HTMLElement).style.display = 'none';
+                    }}
+                  />
+                  {/* Visual Fallback Graphic */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center pointer-events-none -z-0">
+                    <div className="w-12 h-12 rounded-xl bg-accent-purple/10 border border-accent-purple/30 flex items-center justify-center text-accent-purple mb-2 shadow-lg backdrop-blur-sm group-hover:scale-110 transition-transform">
+                      {comp.category === 'Hero' ? <Sparkles className="w-6 h-6" /> :
+                       comp.category === '3D' ? <Box className="w-6 h-6" /> :
+                       <Code2 className="w-6 h-6" />}
+                    </div>
+                    <span className="text-xs font-mono font-medium text-text-muted">{comp.title}</span>
+                  </div>
+
+                  <div className="absolute top-2 right-2 z-10">
                     <StatusBadge status={comp.status} />
                   </div>
-                  <div className="absolute bottom-2 left-2">
+                  <div className="absolute bottom-2 left-2 z-10">
                     <Badge variant="purple" size="sm">{comp.category}</Badge>
                   </div>
                 </div>
